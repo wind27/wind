@@ -1,0 +1,320 @@
+/**usermanage css*/
+.usermanage_btn {
+	color: #296FAD;
+    margin: 0 8px 0 0;
+    text-align: center;
+    color: #296FAD;
+    margin: 0 4px 0 4px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.contentDark {
+    background-color: #F3F3F3;
+    color: #000000;
+    border-bottom: 1px solid #D9D9D9;
+    padding: 10px 0;
+    text-align: center;
+    width: 120px;
+}
+
+.button_0 {
+    border: 1px solid #CCCCCC;
+    color: #999999;
+    cursor: pointer;
+    height: 30px;
+    text-align: center;
+    width: 60px;
+    background-color: #6fb3e0;
+    
+    height: 22px;
+	line-height: 22px;
+	padding: 0 20px;
+	color: #fff;
+}
+
+
+.button_1 {
+	
+	color: #fff;
+	
+	text-decoration: none;
+	cursor: pointer;
+	line-height: 21px
+	font-size: 12px;
+	font-family: "微软雅黑";
+	
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    width: 30px;
+}
+
+ .right_footer {
+    color: #999999;
+    margin-top: 10px;
+    text-align: center;
+}
+
+
+.right_contantTable td{
+	border-bottom: 1px solid #D9D9D9;
+    padding: 10px 0;
+    text-align: center;
+    width: 10%;
+}
+
+
+.mainTitle {
+	border-bottom: 1px solid #ccc;
+	border-left: 3px solid #6fb3e0;
+	height: 40px;
+	line-height: 40px;
+	background-color: #f7f7f7;
+	padding: 0 0 0 12px;
+	font-size: 16px;
+	color: #333333;
+	font-family: "微软雅黑";
+}
+
+
+
+.conForm label {
+float: left;
+height: 20px;
+line-height: 20px;
+}
+
+
+.inputText {
+border: 1px solid #d9d9d9;
+height: 21px;
+line-height: 20px;
+padding: 0 5px;
+float: left;
+}
+
+
+
+
+
+
+
+
+.listTable {
+width: 100%;
+border-top: 1px solid #d8d8d8;
+}
+
+.listTable thead {
+overflow: hidden;
+}
+
+.listTable thead tr {
+table-layout: fixed;
+border-bottom: 1px solid #d8d8d8;
+background-color: #f3f3f3;
+}
+
+
+.listTable thead tr th {
+height: 32px;
+line-height: 32px;
+white-space: nowrap;
+text-overflow: ellipsis;
+overflow: hidden;
+color: #666666;
+padding: 0 10px;
+text-align: center;
+font-size: 12px;
+}
+
+.listTable thead tr {
+table-layout: fixed;
+border-bottom: 1px solid #d8d8d8;
+background-color: #f3f3f3;
+}
+
+.listTable tbody {
+overflow: auto;
+}
+
+.content_top{
+background-color: #f7f7f7;
+}
+.sub_table tr th{
+	text-align: center;
+}
+.sub_table tr td{
+	text-align: center;
+}
+
+.listTable tbody tr td {
+height: 35px;
+line-height: 35px;
+white-space: nowrap;
+text-overflow: ellipsis;
+overflow: hidden;
+padding: 0 10px;
+color: #505050;
+text-align: center;
+color: #999999;
+position: relative;
+font-size: 12px;
+}
+.content_top{
+background-color: #f7f7f7;
+}
+/* 1-3添加人员 */
+.formCon .formList .info.info01 .selectBoxWrap .trigger .selectText{ width:130px;}
+.formCon .formList .info .ifHint { color: #808080; float: left; font-size: 12px; margin: 2px 0 0 12px;}
+.formCon .formList .info .infoBox { float:left; margin:2px 40px 0 0; position:relative;}
+.formCon .formList .info .infoLabel { color:#505050; float:left;}
+.formCon .formList .info .list{ width:660px; border-left: 1px solid #d8d8d8; border-right: 1px solid #d8d8d8;}
+.formCon .formList .info .list .listTable thead tr th,
+.formCon .formList .info .list .listTable tbody tr td{ border-right:1px solid #d8d8d8}
+.formCon .formList .info .list .listTable .lineLast{ border-right:none}
+.formCon .formList .info .list .listTable tbody tr td .inputCheckbox{ margin:11px 5px 0 0;}
+.formCon .formList .info .list .listTable tbody tr td .infoBox{ margin:0 18px 0 0; float:left}
+
+.formCon .formList .info .list .listTable tbody tr td .infoBox p{ 
+	height: 100%;
+	font-size: 12px;
+}
+
+
+/* 1-4添加角色 */
+
+.formCon{ overflow:hidden; margin:20px 0 0 20px;}
+.formCon .formList{ overflow:hidden; margin:0 0 20px 0;}
+.formCon .formList label{ text-align:right; float:left; margin:2px 20px 0 0; color:#505050; min-width:84px;}
+.formCon .formList .showUserLabel{ text-align:left; float:left; color:#505050; min-width:80px;margin: 2px 20px 0 0;}
+
+.formCon .formList label em{ color:#f15540; margin:0 5px;}
+.formCon .formList .info{ float:left;}
+.formCon .formList .info.info01 .inputText{ width:225px;}
+.tree1NodeFolder{ display:inline-block; margin-top:-2px; text-align: center; vertical-align: middle;}
+.formCon .formList .info .treewrap .treeRoot .treeLi .tree1Node { border-bottom: 1px solid #fff; clear: both; overflow: hidden; background-color:#fff6e5;}
+.formCon .formList .info .treewrap{ width:660px; margin:0;}
+.formCon .formList .info .treewrap .treeRoot .treeLi .treeUl .treeLi .tree1Node{ border-bottom:none; background-color:#edf6fd;} 
+.formCon .formList .info .treewrap .treeRoot .treeLi .treeUl .treeLi .treeUl .treeLi .tree1Node{ background-color:#fff;}
+.formCon .formList .info .treewrap .treeRoot .treeLi .treeUl .treeLi .tree1Node .tree1Info{ float:left; margin:0 10px 0 0;}
+.conBtnWrap.conBtnWrap01{ margin:0 0 0 120px;}
+.formCon .formList .info .treewrap .treeRoot .treeLi .tree1Node .tree1NodeName{	margin:0;text-decoration: none;}	
+.formCon .formList .info .treewrap .treeRoot .treeLi .tree1Node .tree1NodeName:hover{color : #000000;text-decoration: none;}
+.treeRoot .treeLi span {cursor: auto;}
+.formCon .formList .error {color:#f00; font-size:12px; padding-top:5px}
+.formCon .formList .role_val label{	text-align:left;margin: 0 0 0 0;}
+.formCon .formList .role_val input{	text-align:left; float:left;margin: 0 0 0 0;}
+
+.treewrap .treeRoot .treeLi .tree1Node a.tree1Aarrow{ background:url(../../../img/ico/icoBasic.png) no-repeat -51px -108px;height:14px;margin:-2px 0 0;}
+.treewrap .treeRoot .treeLi .tree1Node a.tree1Active{ background:url(../../../img/ico/icoBasic.png) no-repeat -35px -108px;height:14px;margin:-2px 0 0;}
+
+.list {
+height: initial;
+margin: 0 0 20px 0;
+}
+.conBox .conFormList .conForm {
+float: left;
+margin: 0 0 0 0; 
+}
+.BtnBlue22 {
+float: left;
+margin: 0 0 0 0;
+
+}
+.BtnBlue22 a.btnSave {
+height: 21px;
+line-height: 21px;
+padding: 0 20px;
+background-color: #6fb3e0;
+display: block;
+color: #fff;
+}
+
+.usermanageInput {
+font-size: 12px;
+height: 21px;
+/* line-height: 20px; */
+}
+.usermanageSelect{
+	border:1px solid #D9D9D9;
+}
+
+.list .listTable tbody tr td .oper a{
+	float:none !important;
+}
+
+
+/** 列表 更多操作 */
+.more-oper{cursor:pointer;}
+.more-oper:hover ul{display:block;}
+
+
+/*6.3.1查看用户*/
+.crumb_nav{ height:50px; line-height:50px; margin:0 18px; border-bottom:1px dashed #c0c5cd;}
+.crumb_nav a{ color:#5f93ff;}
+.user_box { width:588px; margin:0 auto 50px; overflow:hidden}
+.user_box .user_name{ height:82px; border-bottom:1px solid #e6e8eb;}
+.user_box .user_info{ height:50px; line-height:50px; border-bottom:1px solid #e6e8eb; color:#393940;}
+.ico_btn_edit{ background:url(../../img/ico/ico_btn_edit.png?__sprite) no-repeat 0 0; width:15px; height:14px; display:inline-block; margin:0 6px 0 0; vertical-align:-2px;}
+.user_box .user_name .name{ font-size:16px; margin: 30px 0 0; display:inline-block;}
+.user_box .user_name .btn{ margin:26px 0 0 0;  -moz-border-radius:2px; -webkit-border-radius:2px; border-radius:2px; float:right;}
+.user_box .user_info span{ margin:0 0 0 38px;}
+.user_box h3{ font-size:16px; margin:0 0 28px 0; clear:both}
+.function{ width:156px; height:36px; line-height:36px; background-color:#f8f8f8; border-left:3px solid #2ae378; -moz-border-radius:3px; -webkit-border-radius:3px; border-radius:3px; margin:0 30px 20px 0; text-align:center; float:left}
+
+/*2_3_1学生信息*/
+.user_con{ margin:0 18px; position:relative;}
+.user_con .user_title{ font-size:18px; position:absolute; left:50px; top:29px; }
+.user_con .user_pic{ margin:33px 0 0 0; display:inline-block; width:50px; height:50px; overflow:hidden; background:url(../../img/bg/bg_user_default.png) no-repeat 0 0;}
+.user_con .user_data{ margin:0 0 0 28px; display:inline-block; vertical-align: 7px;}
+.user_con .user_data .name{ margin:0;}
+.user_con .user_data p{ color:#b4b4b6; margin:6px 0 0 0;}
+.user_con .user_data p.font_red{ color:#ff6868;}
+.user_con .user_name{ height:100px;}
+.user_con_line{ border-top:1px dashed #c0c5cd;}
+.user_con_line .user_box{ margin-top:35px ;}
+.user_con_line .user_module{ width:280px; border:1px solid #e6e8eb; margin:0 10px 20px 0; float:left}
+.user_con_line .user_module .user_name{ height:88px; padding:0 10px 0 15px;}
+.user_con_line .user_module .user_info{ padding:0 16px;}
+.user_con_line  .user_pic{ margin-top:18px;}
+.bubble{ padding:0 0 0 3px; background:url(../../img/bg/bg_bubble_arrow.png) no-repeat 0 50%; display:inline-block; vertical-align: 2px;}
+.bubble em{ background-color:#ff6868; padding:0 5px;-moz-border-radius:2px; -webkit-border-radius:2px; border-radius:2px; height:16px; line-height:16px; color:#fff; font-size:10px;}
+
+/*2_3_2学生信息-无家长信息and无家长信息*/
+.user_add_box{ width:180px; margin:100px auto 160px; overflow:hidden}
+.user_add_box p{ color:#b4b4b6; font-size:16px; text-align:center}
+.user_add_box .btn_orange{ margin:26px 0 0 28px;}
+
+/* 用户管理 */
+.adapter-list .adapter_list_table{font-size:14px;}
+.adapter-list .adapter_list_table  .title_oper{ height:50px; line-height:50px; border-bottom:1px solid #c0c5cd; padding:0 15px; background-color:#f8f8f8;}
+.adapter-list .adapter_list_table  .title{ float:left; font-size:16px;}
+.adapter-list .adapter_list_table  .title .ico_user{ width:26px; height:26px; background:url(../../img//ico/ico_user.png?__sprite) no-repeat 0 0; display:inline-block; vertical-align:-6px; margin:0 15px 0 0; }
+.adapter-list .adapter_list_table  .oper_btn{ float:right; margin:10px 0 0 0;}
+.adapter-list .adapter_list_table  .btn{ border:1px solid #c0c5cd; height:28px; line-height:28px; display:block; padding:0 8px; background-color:#fff; float:left}
+.adapter-list .adapter_list_table  .btn:hover{ border:1px solid #5f93ff ; }
+.adapter-list .adapter_list_table  .ico_btn_add{ background:url(../../img//ico/ico_btn_add.png?__sprite) no-repeat 0 0; width:12px; height:12px; display:inline-block; margin:0 6px 0 0; vertical-align:-1px;}
+.adapter-list .adapter_list_table  .total_user{ height:50px; line-height:50px;  margin:0 18px;  border-top:1px dashed #c0c5cd;}
+.adapter-list .adapter_list_table  .total_user em{ font-size:18px; color:#fe901b;}
+.adapter-list .adapter_list_table { border-top:1px solid #c0c5cd; width:100%;}
+
+.adapter-list .adapter_list_table tbody tr:nth-child(2n){background: #F8F8F8;}
+
+.adapter-list .adapter_list_table  thead tr th{ height:38px; line-height:38px; border-bottom:1px solid #c0c5cd;  padding:0 0 0 15px; color:#68686d; background-color:#f8f8f8;}
+.adapter-list .adapter_list_table  tbody tr td{ height:46px; line-height:46px; padding:0 0 0 15px; }
+.adapter-list .adapter_list_table  tbody tr td a{ color:#5f93ff; float:left; margin:0 10px 0 0;}
+.adapter-list .adapter_list_table  tbody tr td .oper { position:relative;}
+.adapter-list .adapter_list_table  tbody tr td .oper:hover .oper_list{ border:1px solid #c0c5cd; background-color:#fff; margin:-1px 0 0 -1px;}
+.adapter-list .adapter_list_table  tbody tr td .oper_list{  position:absolute; top:8px; left:70px; }
+.adapter-list .adapter_list_table  tbody tr td .oper_list li{ height:30px; line-height:30px; position:relative;}
+.adapter-list .adapter_list_table  tbody tr td .oper_list li a{ margin:0; padding: 0 10px; min-width:76px;  }
+.adapter-list .adapter_list_table  tbody tr td .oper_list li a:hover{ background-color:#c0c5cd; color:#393940;}
+.adapter-list .adapter_list_table  tbody tr td .oper_list li:hover ul{ display:block}
+.adapter-list .adapter_list_table  tbody tr td .oper_list li ul{ padding:30px 0 0 0; display:none; position:relative; z-index:99;}
+.adapter-list .adapter_list_table  tbody tr td .oper_list li ul li a{ background-color:#fff;}
+.adapter-list .adapter_list_table  tbody tr td .oper_list .ico_oper{ width:10px; height:5px; background:url(../../img//ico/ico_arrow_bt.png?__sprite) no-repeat 0 0; display:inline-block; margin:0 0 0 5px; }
+.adapter-list .adapter_list_table  tbody tr td .oper:hover .oper_list .ico_oper{ background:url(../../img//ico/ico_arrow_bt_hover.png?__sprite) no-repeat 0 0;}
+.adapter-list .adapter_list_table  .select{ width:680px; float:left}
+.adapter-list .adapter_list_table  .select .select_wrap{ margin-bottom:10px;}

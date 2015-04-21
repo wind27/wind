@@ -1,0 +1,285 @@
+/*閻劋绨锔挎櫠閺嶅繒娈慶ss start*/
+.left-sidebar {
+	width: 200px;
+	float: left;
+	text-align: left;
+	border: 1px solid #CCCCCC;
+	border-right: none;
+	background-color: #e6e6e6;
+	min-height: 600px;
+	border-bottom:none;
+}
+
+.left-sidebar ul {
+	font-size: 14px;
+	line-height: 30px;
+}
+
+.left-sidebar ul li {
+	height: 50px;
+	padding: 9px 0px;
+	border-bottom: 1px solid #CCCCCC;
+	cursor:pointer;
+	
+}
+
+.left-sidebar ul li a {
+	display: block;
+	color: black;
+	text-decoration: none;
+	padding: 0 15px;
+}
+
+#paper_mg_menu li:hover a {
+	background: #c7ced8;
+	border: none;
+}
+
+#paper_mg_menu li.active a {
+	background: #408CC1;
+	border: none;
+	color: #FFFFFF;
+}
+
+/*閻劋绨锔挎櫠閺嶅繒娈慶ss end*/
+
+/*閻劋绨稉顓㈡？閸愬懎顔愰惃鍒s start*/
+.content-detail {
+	width: 800px;
+	float: right;
+	text-align: left;
+	border: 1px solid #CCCCCC;
+	background-color:#F7F5FA;
+	min-height: 600px;
+	border-bottom:none;
+}
+
+/** 濡�娼￠弽鍥暯閺嶏拷/
+.paper-content-bar{
+	background-color:#F7F7F7;
+	height:40px;
+	font-size:16px;
+	line-height:40px;
+	padding:0 10px;
+	border-bottom:1px solid #CCCCCC;
+}
+
+
+/** 閺嶅洭顣介弽蹇撳鐟佸懘銈�*/
+.paper-content-bar>span.bluebar{
+	width:3px;
+	height:40px;
+	float:left;
+	background-color:#70B4E0;
+	margin:0 10px 0 -1px;
+}
+
+/** 鐠囨洖宓庣拠锔剧矎娣団剝浼�*/
+.paper-content-bar>div>span.btn-bar {
+	font-size: 12px;
+    font-weight: 30px;
+    line-height: 20px;
+    width: 60px;
+    height:30px;
+    margin: -28px 5px 5px 5px;
+    border:1px solid #CCCCCC;
+    text-align : center;
+    cursor:pointer;
+}
+
+
+.paper-content-bar>div.text-title
+{
+   
+    height:40px;
+    background-color:#e6e6e6;
+    border:1px solid #CCCCCC;
+    display:block;
+
+}
+.paper-content-bar>div.text-title p
+{
+	font-size:14px;
+	margin:5px;
+}
+
+/** 妫版娲伴弽宄扮础 */
+.qbody dd img, .qcontent dd img{max-width:650px;}
+.qbody{
+	
+}
+.qtitle{
+	height:30px;
+	background-color:#70B4E0;
+}
+
+.qtitle .qindex{
+	width:30px;
+	height:30px;
+	background-color:#A1C55E;
+	font-size:14px;
+	line-height:30px;
+	color:#FFFFFF;
+	font-weight:bold;
+	text-align:center;
+}
+
+.qcontent{
+	border-top:1px solid #E6E6E6;
+	font-size:14px;
+	display:inline-block;
+}
+
+.qcontent>label{
+	text-align: center;
+	font-weight:normal;
+	width:64px;
+}
+.qcontent>div{
+	width:726px;
+	display:inline-block;
+}
+.qcontent>div>img{
+	max-width:726px;
+}
+
+/** 濞村鐦懛顏勭暰娑斿锟介幏鈺傤攱 **/
+/** 濞村鐦懛顏勭暰娑斿锟介幏鈺傤攱 **/
+.pselect{
+	display:inline-block;
+}
+
+.default-option{
+	display:inline-block;width:100px;height:25px;border:1px solid #CCCCCC;background:#FFFFFF;line-height:25px;
+	padding-left:5px;
+	font-size:12px;
+	cursor:pointer;
+}
+
+.select-option{
+	width:100px;
+	max-height:200px;
+	border:1px solid #CCCCCC;
+	table-layout: fixed;
+    word-break: break-all;
+    word-wrap: break-word;
+	overflow:auto;
+	background:#FFFFFF;
+	font-size:12px;
+    position: absolute;
+	z-index: 9991;
+	border-top:none;
+	display:none;
+}
+
+.select-option span{
+	display:block;
+	height:20px;
+	line-height:20px;
+	overflow:hidden;
+	cursor:pointer;
+	padding-left:5px;
+}
+
+.select-option span.active{
+	background:#207BDB;
+	color:#FFFFFF;
+}
+
+.select-option span:hover{
+	background:#207BDB;
+	color:#FFFFFF;
+}
+
+.select-down{
+	background-image: url("../img/slec_down.png");
+	width:21px;
+	height:21px;display:inline-block;
+	vertical-align:middle;
+	float:right;
+	margin:1px;'
+}
+
+
+/** button閺嶅嘲绱�*/
+.btn-box{
+	margin-top:15px;
+}
+
+.btn-yellow{
+	background:#FDB24A;
+	width:80px;
+	height:30px;
+	color:#FFFFFF;
+	line-height:20px;
+	padding: 5px 10px;
+	text-align: center;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	display:inline-block;
+}
+
+/** 鐠囨洖宓庣拠锔剧矎娣団剝浼�*/
+.paper-detail-info{
+	height:90px;
+	background:#FFFFFF;
+	border-bottom:1px solid #CCCCCC;
+	padding: 0 10px;
+}
+
+.paper-detail-up{
+	height:50px;font-size:16px;color:blue; 
+}
+
+.paper-detail-down{
+	height:40px;font-size:12px;color:#999999;padding: 5px 0 0 0;
+}
+
+.paper-detail-name{
+	float:left;padding: 20px 0 5px 0;
+}
+
+.paper-detail-desc{
+	float:left;
+}
+
+.paper-detail-desc label{
+	font-weight:normal;
+}
+
+
+/** create-event */
+
+.edit-panel{
+	padding-top:15px;
+}
+
+.edit-panel dl{
+}
+
+.edit-panel dt{
+	color: #333333;display:inline-block;padding-right: 5px;text-align: right;width: 100px;text-align:right;font-weight:normal;
+	font-size:14px;line-height: 40px;
+}
+
+.edit-panel dd{
+	display: inline-block;
+}
+
+.edit-panel dd input{
+	 border-radius: 3px;height: 30px;line-height: 30px;margin-right: 7px;padding: 0 10px;width: 233px;border:1px solid #CCCCCC;
+	 font-size:14px;
+}
+
+.edit-panel .commit{
+	font-size: 16px;
+	border:1px solid #C5E97F;
+	background:#659201;
+	color:#FFFFFF;
+	width:120px;
+	height:40px;
+	text-align:center;
+	margin-top:10px;
+}
+

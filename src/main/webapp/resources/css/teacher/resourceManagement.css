@@ -1,0 +1,88 @@
+.cmContent {
+	background-color:white;
+	width: 900px;
+}
+
+.category-detail-title{
+	float: inherit;
+	height: 30px;
+	border-bottom:1px solid #CCCCCC;
+}
+
+.title-long{
+	width: 290px;float: left;margin-top:5px;
+}
+
+.title-short{
+	width: 80px;float: left;margin-top:5px;
+}
+
+.category-detail-info{
+	float: inherit;
+	height:32px;
+	margin-bottom:1px;
+	border-bottom:1px solid #CCCCCC;
+}
+
+.category-detail-opertation{
+	float: inherit;
+	height:40px;
+	border-bottom:1px solid #CCCCCC;
+}
+
+.category-input{
+	width:260px;float: left;height: 25px;margin-top:2px;
+}
+
+.add-category{
+	width:80px;float: left;height: 25px;margin-top:5px;
+}
+
+.up-category{
+	width:80px;float: left;height: 25px;margin-top:5px;
+}
+
+.down-category{
+	width:80px;float: left;height: 25px;margin-top:5px;
+}
+
+.delete-category{
+	width:80px;float: left;height: 25px;margin-top:5px;
+}
+
+.change-category{
+	width:290px;float: left;height: 25px;margin-top:5px;
+}
+
+.change-category-blank{
+	width:290px;float: left;height: 25px;margin-top:5px;
+}
+
+.category-child{
+	width:29px;float: left;height: 25px;
+}
+
+.category-input-child{
+	width:260px;float: left;height: 25px;margin-top:2px;
+}
+
+.category-parent-blank{
+	width:30px;float: left;height: 25px;
+}
+
+.add-category-blank{
+	width:80px;float: left;height: 25px;margin-top:5px;
+}
+
+span.btn-bar {
+	font-size: 12px;
+    font-weight: normal;
+    line-height: 30px;
+    width: 60px;
+    height:30px;
+    margin: 5px;
+    border:1px solid #CCCCCC;
+    text-align : center;
+    cursor:pointer;
+    float: left;
+}

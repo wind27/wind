@@ -1,0 +1,282 @@
+/*公共样式*/
+.container{background-color:#F5F5F5;width:100%;overflow:hidden;}
+/* global */
+body { position:relative;font-size:12px; font-family:"微软雅黑"; color:#000; background:#fff; }
+a{text-decoration:none;cursor:pointer;}
+a:hover{text-decoration:none;}
+a:active, a:focus{-moz-outline:none;outline:none;ie-dummy:expression(this.hideFocus=true);}
+.b{font-weight:bold;}
+/*pageScroll模块*/
+.pageScroll{width:35px;height:180px;position:absolute;top:850px;left:1150px;}
+.pageScroll .pageScrollUp{height:35px;width:35px;background-image:url(../../img/ico/ico_idxNav.png);background-position:-60px 0px;cursor:pointer;}
+.pageScroll .pageScrollDown{height:35px;width:35px;background-image:url(../../img/ico/ico_idxNav.png);background-position:-100px 0px;margin-top:5px;cursor:pointer;}
+.pageScroll .pageScrollTop {height:100px;width:35px;border-radius:3px;background-color:#6FB3E0;color:#fff;margin-top:5px;	overflow:hidden;cursor:pointer;}
+.pageScroll .pageScrollTop .button{height:100px;width:20px;padding:10px;}
+
+/*1-1-1样式*/
+.rescontainer{background-color:#F5F5F5;width:100%;overflow:hidden;}
+.rescontainer .resManagement{width:1005px;margin:20px auto 40px;}	
+.rescontainer .resManagement .top{height:40px;line-height:40px;width:1000px;border:1px solid #CCCCCC;
+border-bottom:0px;color:#333333;font-size:16px;font-weight:bold;background-color:#F7F7F7;}
+.rescontainer .resManagement .top span{padding-right:10px;float:left;}
+.rescontainer .resManagement .left{height:1410px;width:200px;background-color:#E7E7E7;border:1px solid #CCCCCC;border-right:0px;float:left;}
+.rescontainer .resManagement .left .select .select0{height:20px;padding:5px;font-size:14px;background-color:#FFF;border-bottom:1px solid #CCCCCC;}
+.rescontainer .resManagement .left .select .select0 .image{height:7px;width:11px;background-image:url(../../img/ico/ico_idxNav.png);background-position:-30px -115px;margin:5px;float:right;}
+.rescontainer .resManagement .left .select .select1{height:30px;line-height:30px;width:200px;margin-top:10px;text-align:center;font-size:14px;border-bottom:1px solid #CCCCCC;background-color:#F7F7F7;}
+.rescontainer .resManagement .left .select .select1 .theme{width:100px;height:30px;float:left;}
+.rescontainer .resManagement .left .select .select1 .theme:hover{background-color:#6FB3E0;cursor:pointer;}
+.rescontainer .resManagement .right{height:1410px;width:800px;background-color:#fff;border:1px solid #CCCCCC;float:left;}
+.rescontainer .resManagement .right .right_button{height:45px;width:780px;margin:0 10px;font-size:14px;border-bottom:1px solid #E8E8E8;}	
+.rescontainer .resManagement .right .right_button .button{height:30px;line-height:30px;width:80px;margin-top:15px;margin-right:10px;text-align:center;float:left;background-color:#E8E8E8;color:#333333;}	
+.rescontainer .resManagement .right .right_button .button:hover{background-color:#FEB04B;cursor:pointer;}
+.rescontainer .resManagement .right .right_catalog{height:80px;width:800px;}
+.rescontainer .resManagement .right .right_catalog .catalog{height:40px;line-height:40px;margin-left:20px;}
+.rescontainer .resManagement .right .right_catalog .catalog .catalogConForm li{padding-left:10px;float:left;}
+.rescontainer .resManagement .right .right_catalog .catalog .catalogConForm .conForm{padding-top:10px;}
+.rescontainer .resManagement .right .right_catalog .key{height:20px;line-height:20px;width:330px;color:#d9d9d9;background-color:#fff;border-style:none;border:1px solid #D9D9D9;cursor:pointer;margin:10px;}
+.rescontainer .resManagement .right .right_catalog .search{height:20px;line-height:20px;width:60px;color:#fff;background-color:#6FB3E0;border-style:none;text-align:center;cursor:pointer;}
+.rescontainer .resManagement .right .right_information{height:30px;line-height:30px;text-align:center;border:1px solid #D9D9D9;border-left:0px;border-right:0px;margin-bottom:10px;}	
+.rescontainer .resManagement .right .right_information .information{width:90px;border-right:1px solid #C1C1C1;float:left;}
+.rescontainer .resManagement .right .right_information .information:hover{background-color:#6FB3E0;color:#FFF;cursor:pointer;}
+.rescontainer .resManagement .right .right_content li{width:780px;height:100px;padding:5px 0;margin:5px auto ;}
+.rescontainer .resManagement .right .right_content li .title{width:780px;height:25px;line-height:25px;font-size:14px;background-color:#E1EAF9;}
+.rescontainer .resManagement .right .right_content li .title:hover{background-color:#FFE7C8;cursor:pointer;}
+.rescontainer .resManagement .right .right_content li .title .ico{height:14px;width:14px;background-image:url(../../img/ico/ico_idxNav.png);background-position:-20px 0px;float:left;margin:5px;}
+.rescontainer .resManagement .right .right_content li .title .edit{font-size:12px;padding:0 5px;float:right;}
+.rescontainer .resManagement .right .right_content li .title .edit:hover{color:#fff;background-color:#6FB3E0;}
+.rescontainer .resManagement .right .right_content li .title .edit:hover .title{color:#fff;background-color:#FFE7C8;cursor:pointer;}
+.rescontainer .resManagement .right .right_content li .title .stop{font-size:12px;padding:0 5px;float:right;}
+.rescontainer .resManagement .right .right_content li .title .stop:hover{color:#fff;background-color:#6FB3E0;cursor:pointer;}
+.rescontainer .resManagement .right .right_content li .title .resNum{font-size:12px;padding-right:5px;float:right;}	
+.rescontainer .resManagement .right .right_content li .value{width:780px;height:25px;font-size:12px;background-color:#F7F7F7;margin-bottom:15px;}
+.rescontainer .resManagement .right .right_content li .value .fullStar{color:#FEB04A;}
+.rescontainer .resManagement .right .right_content li .value span{color:#CCCCCC;}	
+.rescontainer .resManagement .right .right_content td{font-size:12px;color:#999999;padding-right:30px;}
+.rescontainer .resManagement .right .right_footer{color:#999999;text-align:center;margin-top:10px;}
+.rescontainer .resManagement .right .right_footer .button_0{height:30px;line-height:30px;width:60px;color:#999999;background-color:#fff;border-style:none;border:1px solid #CCCCCC;text-align:center;cursor:pointer;   }
+.rescontainer .resManagement .right .right_footer .button_0:hover{background-color:#6FB3E0;color:#fff;cursor:pointer;}
+.rescontainer .resManagement .right .right_footer .button_1{height:30px;line-height:30px;width:30px;color:#999999;background-color:#fff;border:1px solid #CCCCCC;border-style:solid;font-weight:bold;text-align:center;cursor:pointer;    }
+.rescontainer .resManagement .right .right_footer .button_1:hover{background-color:#6FB3E0;color:#fff;cursor:pointer;}
+/*1-2样式*/
+/*标题栏*/
+.container .top{height:46px;background-image:url(../../img/bg/bg_1.png);border-bottom:1px solid #D6D6D6;}	
+.container .top .catalog{height:46px;line-height:46px;width:600px;padding-top:6px;margin:0 550px;text-align:center;}	
+.container .top .catalog .topCatalog{font-size:14px;height:40px;width:80px;color:#fff;margin-right:10px;float:left;}
+.container .top .catalog .topCatalog:hover{background-color:#F2F2F2;color:#648FBC;cursor:pointer;}
+.container .top .catalog .topImg{height:19px;width:19px;margin-left:10px;margin-top:15px;background-image:url(../../img/ico/ico_idxNav.png);background-position:-95px -115px;float:left;}	
+/*中间栏左栏*/
+.container .mainWrap .mainIndex .left{height:1170px;width:200px;background-color:#E7E7E7;border:1px solid #CCCCCC;border-right:0px;float:left;}
+.container .mainWrap .mainIndex .left .catalog{border-bottom:1px solid #C1C1C3;font-size:14px;height:50px;line-height:50px;width:200px;position:relative;}
+.container .mainWrap .mainIndex .left .catalog .ico{position:absolute;top:21px;left:15px;overflow:hidden;}
+.container .mainWrap .mainIndex .left .catalog #ico_0{height:9px;width:15px;background-image:url(../../img/ico/ico_idxNav.png);background-position:0px -45px;overflow:hidden;}	
+.container .mainWrap .mainIndex .left .catalog #ico_1{height:13px;width:15px;background-image:url(../../img/ico/ico_idxNav.png);background-position:-45px -45px;}
+.container .mainWrap .mainIndex .left .catalog #ico_2{height:17px;width:16px;background-image:url(../../img/ico/ico_idxNav.png);background-position:-45px -65px;}
+.container .mainWrap .mainIndex .left .catalog #ico_3{height:8px;width:13px;background-image:url(../../img/ico/ico_idxNav.png);background-position:-20px -65px;}
+.container .mainWrap .mainIndex .left .catalog .catalogWord{height:50px;line-height:50px;width:155px;text-align:left;float:right;}
+.container .mainWrap .mainIndex .left .catalog:hover{background:#408BC2;color:#fff;cursor:pointer;}
+/*中间栏右栏*/
+.container .mainWrap .mainIndex .mainCon .right_class{height:80px;padding:0 10px;background-color:#fff;border-bottom:1px solid #CCCCCC;}
+.container .mainWrap .mainIndex .mainCon .right_class0{height:40px;line-height:40px;}
+.container .mainWrap .mainIndex .mainCon .right_class0 label{float:left;}
+.container .mainWrap .mainIndex .mainCon .right_class0 .conForm{padding-top:10px;padding-right:10px;float:left;}
+.container .mainWrap .mainIndex .mainCon .key{height:20px;line-height:20px;width:330px;color:#d9d9d9;background-color:#fff;border-style:none;border:1px solid #D9D9D9;margin:10px;cursor:pointer;}
+.container .mainWrap .mainIndex .mainCon .search{height:20px;line-height:20px;width:60px;color:#fff;background-color:#6FB3E0;
+border-style:none;text-align:center;cursor:pointer;}	
+.container .mainWrap .mainIndex .mainCon .right_content{min-height:800px;}
+.container .mainWrap .mainIndex .mainCon .right_content .right_contantTable{padding-left:30px;font-size:12px;}
+.container .mainWrap .mainIndex .mainCon .right_content .right_contantTable .head{height:35px;font-size:12px;text-align:center;background-color:#F3F3F3;color:#666666;font-weight:bold;border-bottom:1px solid #D9D9D9;}
+.container .mainWrap .mainIndex .mainCon .right_content .right_contantTable .body{height:100px;font-size:12px;text-align:center;background-color:#fff;color:#999999;border-bottom:1px solid #D9D9D9;}
+.container .mainWrap .mainIndex .mainCon .right_content .right_contantTable .ico{height:14px;width:14px;background-image:url(../../img/ico/ico_idxNav.png);background-position:-20px 0px;float:left;margin:5px;}
+.container .mainWrap .mainIndex .mainCon .right_content .right_contantTable .name{height:35px;width:240px;padding-left:20px;}
+.container .mainWrap .mainIndex .mainCon .right_content .right_contantTable .type{height:35px;width:120px;}
+.container .mainWrap .mainIndex .mainCon .right_content .right_contantTable .operator{height:35px;width:130px;text-align:left;}
+.container .mainWrap .mainIndex .mainCon .right_content .right_contantTable .state{height:35px;width:150px;}
+.container .mainWrap .mainIndex .mainCon .right_content .right_contantTable .result{height:35px;width:100px;}
+.container .mainWrap .mainIndex .mainCon .right_content .right_contantTable .act{height:35px;width:100px;}		
+.container .mainWrap .mainIndex .mainCon .right_content .right_footer{color:#999999;text-align:center;margin-top:10px;}
+.container .mainWrap .mainIndex .mainCon .right_content .right_footer .button_0{height:30px;line-height:30px;width:60px;color:#999999;background-color:#fff;border-style:none;border:1px solid #CCCCCC;text-align:center;cursor:pointer;}
+.container .mainWrap .mainIndex .mainCon .right_content .right_footer .button_0:hover{background-color:#6FB3E0;color:#fff;cursor:pointer;}
+.container .mainWrap .mainIndex .mainCon .right_content .right_footer .button_1{height:30px;line-height:30px;width:30px;color:#999999;background-color:#fff;border:1px solid #CCCCCC;border-style:solid;font-weight:bold;text-align:center;cursor:pointer;   }
+.container .mainWrap .mainIndex .mainCon .right_content .right_footer .button_1:hover{background-color:#6FB3E0;color:#fff;cursor:pointer;}
+/*1-3-1样式*/
+.container .sta_content{height:1002px;width:1005px;margin:20px auto 40px;}
+/*中间栏左栏*/
+.container .mainWrap .mainIndex .left{height:1000px;width:200px;background-color:#E7E7E7;border:1px solid #CCCCCC;border-right:0px;float:left;}
+.container .mainWrap .mainIndex .left li{border-bottom:1px solid #C1C1C3;}
+.container .mainWrap .mainIndex .left .catalog{font-size:14px;height:50px;line-height:50px;width:200px;position:relative;}
+.container .mainWrap .mainIndex .left .catalog .ico{position:absolute;top:21px;left:15px;overflow:hidden;}	
+.container .mainWrap .mainIndex .left .catalog #ico_0{height:9px;width:15px;background-image:url(../../img/ico/ico_idxNav.png);background-position:0px -45px;overflow:hidden}	
+.container .mainWrap .mainIndex .left .catalog #ico_1{height:13px;width:15px;background-image:url(../../img/ico/ico_idxNav.png);background-position:-45px -45px;}
+.container .mainWrap .mainIndex .left .catalog #ico_2{height:17px;width:16px;background-image:url(../../img/ico/ico_idxNav.png);background-position:-45px -65px;}
+.container .mainWrap .mainIndex .left .catalog #ico_3{height:8px;width:13px;background-image:url(../../img/ico/ico_idxNav.png);background-position:-20px -65px;}
+.container .mainWrap .mainIndex .left .catalog .catalogWord{height:50px;line-height:50px;width:155px;text-align:left;float:right;}
+.container .mainWrap .mainIndex .left .catalog:hover{background:#408BC2;color:#fff;cursor:pointer;}
+.container .mainWrap .mainIndex .left .catalogStatistics{font-size:14px;margin:15px;margin-left:40px;color:#999999;
+}
+.container .mainWrap .mainIndex .left .catalogStatistics:hover{color:#000000;cursor:pointer;}
+/*中间栏右栏*/
+.container .mainWrap .mainIndex .mainCon .right_title{height:40px;line-height:40px;font-size:16px;color:#333333;background-color:#F7F7F7;border-bottom:1px solid #CCCCCC;}
+.container .mainWrap .mainIndex .mainCon .right_title span{padding-right:10px;float:left;}
+.container .mainWrap .mainIndex .mainCon .right_catalog{height:40px;border-bottom:1px solid #CCCCCC;}
+.container .mainWrap .mainIndex .mainCon .right_catalog li{padding-top:10px;padding-left:10px;float:left;border:none;}
+.container .mainWrap .mainIndex .mainCon .right_catalog .conForm .selectBox li{float:none;padding-top:0px;}
+
+.container .mainWrap .mainIndex .mainCon .right_catalog .ico{height:13px;width:13px;background-image:url(../../img/ico/ico_idxNav.png);background-position:-120px -115px;padding-right:3px;margin:3px;float:right;}
+.container .mainWrap .mainIndex .mainCon .right_catalog .time{height:20px;width:135px;float:left;overflow:hidden;}
+.container .mainWrap .mainIndex .mainCon .right_catalog .search{height:22px;line-height:22px;width:60px;color:#fff;background-color:#6FB3E0;border-style:none;text-align:center;cursor:pointer; }
+.container .mainWrap .mainIndex .mainCon .right_content .right_contantTable{width:100%;color:#999999;}
+.container .mainWrap .mainIndex .mainCon .right_content .right_contantTable td{padding:10px 0;width:120px;;text-align:center;border-bottom:1px solid #D9D9D9;}
+.container .mainWrap .mainIndex .mainCon .right_content .right_contantTable td a{color:#296FAD;}
+.container .mainWrap .mainIndex .mainCon .right_content .contentDark{background-color:#F3F3F3;}
+.container .mainWrap .mainIndex .mainCon .right_content .head{background-color:#F3F3F3;font-weight:bold;color:#666666;}
+/*1-3-3样式*/
+.container .usersta_content{height:970px;width:1005px;margin:20px auto 40px;}
+/*中间栏左栏*/
+.container .usersta_content .left{height:970px;width:200px;background-color:#E7E7E7;border:1px solid #CCCCCC;border-right:0px;float:left;}
+.container .usersta_content .left li{border-bottom:1px solid #C1C1C3;}
+.container .usersta_content .left .catalog{font-size:14px;height:50px;line-height:50px;width:200px;position:relative;}
+.container .usersta_content .left .catalog .ico{position:absolute;top:21px;left:15px;overflow:hidden}
+.container .usersta_content .left .catalog #ico_0{height:9px;width:15px;background-image:url(../../img/ico/ico_idxNav.png);background-position:0px -45px;overflow:hidden;}	
+.container .usersta_content .left .catalog #ico_1{height:13px;width:15px;background-image:url(../../img/ico/ico_idxNav.png);background-position:-45px -45px;}
+.container .usersta_content .left .catalog #ico_2{height:17px;width:16px;background-image:url(../../img/ico/ico_idxNav.png);background-position:-45px -65px;}
+.container .usersta_content .left .catalog #ico_3{height:8px;width:13px;background-image:url(../../img/ico/ico_idxNav.png);background-position:-20px -65px;}
+.container .usersta_content .left .catalog .catalogWord{height:50px;line-height:50px;width:155px;text-align:left;float:right;}
+.container .usersta_content .left .catalog:hover{background:#408BC2;color:#fff;cursor:pointer;}
+.container .usersta_content .left .catalogStatistics{font-size:14px;margin:15px;margin-left:40px;color:#999999;}
+.container .usersta_content .left .catalogStatistics:hover{color:#000000;cursor:pointer;}
+/*中间栏右栏*/
+.container .mainWrap .mainIndex .mainCon .right_title{height:40px;line-height:40px;font-size:16px;color:#333333;background-color:#F7F7F7;border-bottom:1px solid #CCCCCC;}
+.container .mainWrap .mainIndex .mainCon .right_title span{padding-right:10px;float:left;}
+.container .mainWrap .mainIndex .mainCon .right_catalog{height:80px;border-bottom:1px solid #CCCCCC;}
+.container .mainWrap .mainIndex .mainCon .right_catalog0{height:40px;}
+.container .mainWrap .mainIndex .mainCon .right_catalog0 .conForm .selectBox li{float:none;padding-top:0px;}
+.container .mainWrap .mainIndex .mainCon .right_catalog .ico{height:13px;width:13px;background-image:url(../../img/ico/ico_idxNav.png);background-position:-120px -115px;padding-right:3px;margin:3px;float:right;}
+.container .mainWrap .mainIndex .mainCon .right_catalog .time{height:20px;width:135px;float:left;overflow:hidden;}
+.container .mainWrap .mainIndex .mainCon .right_catalog .username{height:20px;width:120px;color:#d9d9d9;border-style:none;border:1px solid #D9D9D9;}	
+.container .mainWrap .mainIndex .mainCon .right_catalog .search{height:22px;line-height:22px;width:60px;color:#fff;background-color:#6FB3E0;border-style:none;text-align:center;cursor:pointer; }
+.container .mainWrap .mainIndex .mainCon .right_content .right_contantTable td{padding:8px 5px;line-height:20px;width:120px;text-align:center;border-bottom:1px solid #D9D9D9;}
+.container .mainWrap .mainIndex .mainCon .right_content .contentDark{background-color:#F3F3F3;}
+.container .mainWrap .mainIndex .mainCon .right_content .head td{background-color:#F3F3F3;font-weight:bold;color:#666666;}
+.container .mainWrap .mainIndex .mainCon .right_content .right_footer{color:#999999;text-align:center;margin-top:40px;}
+.container .mainWrap .mainIndex .mainCon .right_content .right_footer .button_0{height:30px;line-height:30px;width:60px;color:#999999;background-color:#fff;border-style:none;border:1px solid #CCCCCC;text-align:center;cursor:pointer;}
+.container .mainWrap .mainIndex .mainCon .right_content .right_footer .button_0:hover{background-color:#6FB3E0;color:#fff;cursor:pointer;}
+.container .mainWrap .mainIndex .mainCon .right_content .right_footer .button_1{height:30px;line-height:30px;width:30px;color:#999999;background-color:#fff;border:1px solid #CCCCCC;font-weight:bold;text-align:center;cursor:pointer; }
+.container .mainWrap .mainIndex .mainCon .right_content .right_footer .button_1:hover{background-color:#6FB3E0;color:#fff;cursor:pointer;}
+/*1-3-6样式*/
+.container .mainWrap .mainIndex .mainCon .right_title{height:40px;line-height:40px;font-size:16px;color:#333333;background-color:#F7F7F7;border-bottom:1px solid #CCCCCC;}
+.container .mainWrap .mainIndex .mainCon .right_title span{padding-right:10px;float:left;}
+.container .mainWrap .mainIndex .mainCon .right_button{height:40px;width:780px;font-size:14px;text-align:center;margin-left:10px;border-bottom:1px solid #E8E8E8;}
+.container .mainWrap .mainIndex .mainCon .right_button .button{height:30px;line-height:30px;width:80px;margin-top:10px;margin-right:10px;border-radius:3px;background-color:#E8E8E8;float:left;}
+.container .mainWrap .mainIndex .mainCon .right_button .button_sel{height:30px;line-height:30px;width:80px;margin-top:10px;margin-right:10px;border-radius:3px;background-color:#FEB04B;float:left;}
+.container .mainWrap .mainIndex .mainCon .right_button .button:hover{background-color:#FEB04B;cursor:pointer;}
+.container .mainWrap .mainIndex .mainCon .right_catalog{height:40px;border-bottom:1px solid #CCCCCC;}
+.container .mainWrap .mainIndex .mainCon .right_catalog .conForm .selectBox li{float:none;padding-top:0px;}
+.container .mainWrap .mainIndex .mainCon .right_catalog .ico{height:13px;width:13px;background-image:url(../../img/ico/ico_idxNav.png);background-position:-120px -115px;padding-right:3px;margin:3px;float:right;}
+.container .mainWrap .mainIndex .mainCon .right_catalog .time{height:20px;width:135px;float:left;overflow:hidden;}
+.container .mainWrap .mainIndex .mainCon .right_catalog .search{height:22px;line-height:22px;width:60px;color:#fff;background-color:#6FB3E0;border-style:none;text-align:center;cursor:pointer; }
+.container .mainWrap .mainIndex .mainCon .right_content .right_contantTable tr{text-align:center;border-bottom:1px solid #D9D9D9;}
+.container .mainWrap .mainIndex .mainCon .right_content .contentDark{background-color:#F3F3F3;}
+.container .mainWrap .mainIndex .mainCon .right_content .table{width:70px;}
+.container .mainWrap .mainIndex .mainCon .right_content .resources{height:30px;}
+.container .mainWrap .mainIndex .mainCon .right_content .modular{width:150px;}
+.container .mainWrap .mainIndex .mainCon .right_content .unit{text-align:left;width:150px;}
+.container .mainWrap .mainIndex .mainCon .right_content .subject{width:150px;border-right:1px solid #D9D9D9;}
+.container .mainWrap .mainIndex .mainCon .right_content .total{border-left:1px solid #D9D9D9;}
+.container .mainWrap .mainIndex .mainCon .right_content .head{background-color:#F3F3F3;font-weight:bold;text-align:center;color:#666666;}		
+.container .mainWrap .mainIndex .mainCon .right_content .right_footer{color:#999999;text-align:center;margin-top:40px;}
+.container .mainWrap .mainIndex .mainCon .right_content .right_footer .button_0{height:30px;line-height:30px;width:60px;color:#999999;background-color:#fff;border-style:none;border:1px solid #CCCCCC;text-align:center;cursor:pointer;   }
+.container .mainWrap .mainIndex .mainCon .right_content .right_footer .button_0:hover{background-color:#6FB3E0;color:#fff;cursor:pointer;}
+.container .mainWrap .mainIndex .mainCon .right_content .right_footer .button_1{height:30px;line-height:30px;width:30px;color:#999999;background-color:#fff;border:1px solid #CCCCCC;font-weight:bold;text-align:center;cursor:pointer;  }
+.container .mainWrap .mainIndex .mainCon .right_content .right_footer .button_1:hover{background-color:#6FB3E0;color:#fff;cursor:pointer;}
+/*1-3-7样式*/
+.container .mainWrap .mainIndex .mainCon .right_button .button_sel{height:30px;line-height:30px;width:80px;margin-top:10px;margin-right:10px;border-radius:3px;background-color:#FEB04B;float:left;}
+.container .mainWrap .mainIndex .mainCon .right_content0 .right_contantTable tr{text-align:center;border-bottom:1px solid #D9D9D9;}
+.container .mainWrap .mainIndex .mainCon .right_content0 .contentDark{background-color:#F3F3F3;}
+.container .mainWrap .mainIndex .mainCon .right_content0 .table{padding:10px 0;width:70px;}
+.container .mainWrap .mainIndex .mainCon .right_content0 .resources{height:30px;}
+.container .mainWrap .mainIndex .mainCon .right_content0 .modular{width:225px;}
+.container .mainWrap .mainIndex .mainCon .right_content0 .unit{text-align:left;width:150px;}
+.container .mainWrap .mainIndex .mainCon .right_content0 .subject{width:225px;border-right:1px solid #D9D9D9;}
+.container .mainWrap .mainIndex .mainCon .right_content0 .total{border-left:1px solid #D9D9D9;}
+.container .mainWrap .mainIndex .mainCon .right_content0 .head{background-color:#F3F3F3;font-weight:bold;text-align:center;color:#666666;}		
+.container .mainWrap .mainIndex .mainCon .right_content0 .right_footer{color:#999999;text-align:center;margin-top:40px;}
+.container .mainWrap .mainIndex .mainCon .right_content0 .right_footer .button_0{height:30px;line-height:30px;width:60px;color:#999999;background-color:#fff;border-style:none;border:1px solid #CCCCCC;text-align:center;cursor:pointer;}
+.container .mainWrap .mainIndex .mainCon .right_content0 .right_footer .button_0:hover{background-color:#6FB3E0;color:#fff;cursor:pointer;}
+.container .mainWrap .mainIndex .mainCon .right_content0 .right_footer .button_1{height:30px;line-height:30px;width:30px;color:#999999;background-color:#fff;border:1px solid #CCCCCC;font-weight:bold;text-align:center;cursor:pointer;}
+.container .mainWrap .mainIndex .mainCon .right_content0 .right_footer .button_1:hover{background-color:#6FB3E0;color:#fff;cursor:pointer;}
+/* 1-4-1添加资源02 */
+.conFormWrap{ overflow:hidden; margin:0 0 0 10px;}
+.formTab{ border-bottom:1px solid #d8d8d8; position:relative; margin:17px 0 0 0;}
+.formTab .TabTit{ overflow:hidden; }
+.formTab .TabTit li{ float:left; margin:6px 0 0 0; width:80px; height:30px; line-height:30px; background-color:#e8e8e8; margin:0 10px 0 0;}
+.formTab .TabTit li a{ height:30px; line-height:30px; display:block; color:#505050; text-align:center;}
+.formTab .TabTit li.current a{ background-color:#feb04a; font-weight:bold; color:#fff;}
+.formCon{ overflow:hidden; margin:20px 0 0 0;}
+.formCon .formList{ overflow:hidden; margin:0 0 20px 0;}
+.formCon .formList label{ text-align:right; float:left; margin:2px 20px 0 0; color:#505050; min-width:80px;}
+.formCon .formList label em{ color:#f15540; margin:0 5px;}
+.formCon .formList .info{ float:left;}
+.formCon .formList .infoTp{ overflow:hidden}
+.formCon .formList .infoBt{ overflow:hidden; margin:15px 0 0 0;}
+.formCon .formList .BtnBlue23{ margin:0}
+.formCon .formList .info .ifHint{ float:left; color:#808080; font-size:12px; margin:2px 0 0 12px;}
+.formCon .formList .info .ifHint em{ color: #e60012;}
+.formCon .formList .info .infoSwBox{ float:left;  background-color:#f8f8f8; height:26px; line-height:26px; padding:0 10px; margin:0 10px 0 0; display:inline;}
+.formCon .formList .info .infoSwBox .infoSw { float:left; color:#505050; display:inline-block; margin:0 10px 0 0;}
+.formCon .formList .info .infoSwBox .infoSw p{ float:left}
+.formCon .formList .info .infoSwBox .infoSw span{ display:block;  width:14px; height:14px; float:left; margin:7px 5px 0 0; background:url(../../img/ico/ico_window.png) no-repeat 0 0;}
+.formCon .formList .info .infoSwBox .infoSw .swIco01{ background-position: 0 0 }
+.formCon .formList .info .infoSwBox .infoBarBox{ float:left; margin:10px 0 0 0;}
+.formCon .formList .info .infoSwBox .infoBarBox .infoBar{ width:118px; height:6px; border:1px solid #cccccc; float:left;}
+.conFormWrap .formCon .formList .info .infoSwBox .search{background-color: #6FB3E0;border-style: none;color: #FFFFFF;cursor: pointer;height: 22px;line-height: 22px;text-align: center;width: 60px;}
+.conFormWrap .formCon .formList .info .infoSwBox .infoBarBox .infoBar .barBg{ width:100%; background-color:#5dc83c;height:6px;}
+.conFormWrap .formCon .formList .info .infoSwBox .infoBarBox .swIco02{ background:url(../../img/ico/ico_upload.png) no-repeat -20px 0; width:16px; height:12px; float:left;}
+.infoText{ width:542px; height:22px; line-height:22px; border:1px solid #cccccc; padding:0 5px; float:left}
+.infoTextarea{ width:542px; height:62px; border:1px solid #cccccc; padding:5px; resize:none; color:#a8a8a8;}
+.formCon .formList .info .infoBox{ margin:2px 40px 0 0; float:left; position:relative;}
+.formCon .formList .info .infoBox.infoBox01{ margin:0 0 0 150px; float:right;}
+.formCon .formList .info .infoBox.infoBox01 a.integral{ color:#1a7cce}
+
+.infoCheckbox{ float:left; margin:2px 5px 0 0;}
+.infoRadio{ float:left; margin:0 5px 0 0;}
+.infoLabel{ float:left; color:#808080; cursor:pointer;}
+.infoLabel em{ color:#e34223}
+.conFormWrap .formCon .formList .info .infoAdd{ overflow:hidden}
+.conFormWrap .formCon .formList .info .infoAdd .AddBoxWrap{  float:left; margin: 0 10px 0 0;}
+.conFormWrap .formCon .formList .info .infoAdd .AddBoxWrap.AddBoxWrap01{ margin:0 0 0 10px}
+.conFormWrap .formCon .formList .info .infoAdd .AddTitle{ height:30px; line-height:30px; background-color:#f7f7f7;font-weight:bold; color:#999999; padding:0 10px; }
+.conFormWrap .formCon .formList .info .infoAdd .AddBox{ float:left; border:1px solid #cccccc; width:168px; height:182px; padding:5px 0; overflow-y:auto}
+.conFormWrap .formCon .formList .info .infoAdd .AddBox li{ height:20px; line-height:20px; padding:0 10px; cursor:pointer;}
+.conFormWrap .formCon .formList .info .infoAdd .AddBox li.current,.conFormWrap .formCon .formList .info .infoAdd .AddBox li.current:hover{ background-color:#50a2df; color:#ffffff;}
+.conFormWrap .formCon .formList .info .infoAdd .AddBox li:hover{ background-color:#eff2f9;}
+.conFormWrap .formCon .formList .info .infoAdd .BtnWrap{ margin:60px 0 0 0; float:left; width:60px;}
+.conFormWrap .formCon .formList .info .infoAdd .BtnWrap .search{background-color: #6FB3E0;border-style: none;color: #FFFFFF;cursor: pointer;height: 22px;line-height: 22px;text-align: center;margin:0 0 16px 0;width: 60px;}
+.conBtnWrap { margin:0 0 0 8px;}
+.conBtnWrap .search{ width:95px; height:30px; line-height:30px; background-color:#feb04a; font-size:14px; }
+.formCon .formList .info.info02 .infoSelect{ width:274px;}
+.formCon .formList.formList01 label{ clear:both; float:none}
+.formCon .formList.formList01 .info{ clear:both; float:none; margin:10px 0 0 0;}
+.formCon .formList .info .kwTxt{}
+.formCon .formList .info .kwTxt li{ list-style:disc; color:#808080; height:18px; line-height:18px; }
+.infoSelect{margin:0 10px 0 0; color:#565656;float:left;}
+.infoSelect option{ padding:2px 5px; }
+.infoSelect option:hover{ background-color:#eff2f9;}
+/* 1-5-1预览-课件02 */
+.formCon.formCon01{}
+.formCon.formCon01 .formList{ margin-bottom:5px;}
+.formCon.formCon01 .formList label{ margin-top:0;}
+.starIco{ overflow:hidden}
+.starIco em{ background:url(../../img/ico/ico_window.png) no-repeat -20px -22px ; width:14px; height:14px; display:block; float:left; margin:0 10px 0 0 ;}
+.starIco em.limit{ background-position: 0 -22px;}
+/* 1-5-3视频音频02 */
+.windowWrap .windowBox .windowTitle h3 span{ display:block;  width:14px; height:14px; float:left; margin:20px 5px 0 0; background:url(../../img/ico/ico_window.png) no-repeat 0 0;}
+.windowWrap .windowBox .windowTitle h3 .swIco01{ background-position: 0 0;}
+.windowWrap .windowBox .windowTitle h3 .swIco02{ background-position: -19px 0;}
+.windowWrap .windowBox .windowTitle h3 .swIco03{ background-position: -37px 0;}
+.windowWrap .windowBox .windowTitle h3 .swIco04{ background-position: -55px 0;}
+.windowWrap .windowBox .windowMain .windowCon .palyBox{ overflow:hidden; padding:26px 0 0 0; text-align:center}
+
+
+
+
+

@@ -1,0 +1,213 @@
+/** fixed **/
+.mainTitle {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.formTab {
+    margin: 15px 0 0 0;
+}
+
+.list {
+    height: auto;
+}
+
+/** utils **/
+.inline {
+    display: inline-block;
+}
+
+.fRight {
+    float: right;
+}
+
+.fLeft {
+    float: left;
+}
+
+.hidden {
+    display: none;
+}
+
+/** common **/
+body {
+    font-size: 12px;
+}
+
+a, a:active, a:link {
+    color: #666;
+}
+
+
+/** content **/
+input.searchIpt {
+    height: 25px;
+}
+
+#sourceSel, #feedTypeSel {
+    height: 25px;
+}
+
+a.searchBtn {
+    height: 25px;
+    line-height: 25px;
+    width: 40px;
+    text-align: center;
+    padding: 0 5px;
+    display: inline-block;
+    background-color: #61a2d8;
+    color: #fff;
+    vertical-align: top;
+}
+
+.badge {
+    position: absolute;
+    top: -9px;
+    right: -15px;
+    min-width: 10px;
+    padding: 3px 7px;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    background-color: #ff0000;
+    border-radius: 10px;
+}
+
+ul.itemList {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    height: 40px;
+    font-size: 1.03rem;
+}
+
+ul.itemList li {
+    float: left;
+    border: 1px solid #999;
+    border-bottom: 0;
+    text-align: center;
+    width: 80px;
+    padding: 0;
+    margin: 12px 8px 0;
+    -webkit-border-top-left-radius: 4px;
+    -webkit-border-top-right-radius: 4px;
+    position: relative;
+}
+
+ul.itemList li.current {
+    background-color: #61a2d8;
+}
+
+ul.itemList li a {
+    display: block;
+    padding: 3px 10px;
+}
+
+ul.itemList li.current a {
+    color: #fff;
+}
+
+table.listTable thead tr {
+    background-color: #f2f2f2!important;
+}
+
+table.listTable th {
+    font-size: 0.91rem;
+    color: #666!important;
+}
+
+.feedbackList tr {
+    cursor: default;
+}
+
+.feedbackList td {
+    font-size: .9rem;
+}
+
+.handleBox {
+    display: inline-block;
+}
+
+.handleBox .btn {
+    display: inline-block;
+    padding: 2px;
+    height: 18px;
+    line-height: 18px;
+    margin: 0 2px;
+}
+
+.handleBox .ok {
+    background-color: #61a2d8;
+    color: #fff!important;
+}
+
+.handleBox .cancel {
+    background-color: #f2f2e6;
+    color: #666!important;
+}
+
+a.feedback_content {
+    margin-right: 5px;
+}
+
+div.nodata {
+    margin: 0 auto;
+    font-size: large;
+}
+
+.sort {
+    line-height: 25px;
+    margin-right: 15px;
+}
+
+.sort a {
+    margin: 0 3px;
+    color: #aaaaaa;
+    font-size: .9rem;
+}
+
+.sort a.selected {
+    color: #61a2d8;
+}
+
+.sort span {
+    margin: 0 12px;
+}
+
+.sort a.up:after {
+    content: "↑";
+}
+
+.sort a.down:after {
+    content: "↓";
+}
+
+.row {
+    line-height: 25px;
+    font-size: 14px;
+}
+
+.row:nth-child(1) {
+    margin-top: 5px;
+}
+
+.row .title {
+    display: inline-block;
+    width: 100px;
+    text-align: right;
+    vertical-align: top;
+}
+
+.row .content {
+    display: inline-block;
+    width: 450px;
+}
+
+.row li {
+    float: left;
+    margin: 5px 15px;
+}

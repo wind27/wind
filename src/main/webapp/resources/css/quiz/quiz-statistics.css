@@ -1,0 +1,42 @@
+.paper-st-list .paper_vf_head{
+	height:35px;text-align:left;
+	border-bottom:1px solid #CCCCCC;font-size:0px;background:#f3f3f3;color:#666;font-weight:bold;
+}
+
+.paper-st-list .paper_vf_head > div , .paper-st-list .paper-vf-body > div{
+	display:inline-block;line-height:25px;padding: 5px 0;font-size:12px;width:25%;text-align:center;
+	table-layout: fixed;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+
+.paper-st-list .paper-vf-body > div > a{color: #296FAD;}
+
+
+.paper-st-list .paper-vf-body{
+	color: #999999;
+	height:30px;
+	border-bottom:1px solid #CCCCCC;
+	font-size:0;
+}
+
+.paper-st-list .paper-vf-body:nth-child(odd){
+	background:#fffff;
+	color:#3b3b3b;
+	height:35px;
+	
+}
+.paper-st-list .paper-vf-body:nth-child(odd):hover{
+	background:#e4f4ff;
+}
+
+
+.paper-st-list .paper-vf-body:nth-child(even){
+	background:#f7f7f7;
+	color:#3b3b3b;
+	height:35px;
+	
+}
+.paper-st-list .paper-vf-body:nth-child(even):hover{
+	background:#e4f4ff;
+}

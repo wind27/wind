@@ -1,0 +1,225 @@
+.hidden {
+    display: none!important;
+}
+
+button {
+    width: 60px;
+    height: 25px;
+    cursor: pointer;
+}
+
+button:enabled:hover {
+    background-color: #61a2d8;
+    color: #fff;
+}
+
+.tCenter {
+    text-align: center;
+}
+
+a:hover {
+    font-weight: bold;
+}
+
+/*******************************/
+
+div.videoBox {
+    width: 750px;
+    height: 550px;
+}
+
+div.videoBox #video, div.videoBox #info {
+    overflow: hidden;
+    height: 500px;
+}
+
+ul.videoList {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border-bottom: 1px solid #666;
+}
+
+ul.videoList li {
+    float: left;
+    border: 1px solid #666;
+    border-bottom: none;
+    margin: 0 4px;
+    padding: 4px 8px;
+}
+
+ul.videoList li.current {
+    background-color: #61a2d8;
+}
+
+ul.videoList li.current a {
+    color: #fff;
+}
+
+.btns {
+    float: right;
+}
+
+.video_info {
+    text-align: center;
+}
+
+.video_info .left {
+    float: left;
+    width: 600px;
+}
+
+.video_info .right {
+    float: right;
+    width: 140px;
+    height: 100%;
+    display: -webkit-box;
+    -webkit-box-align: center;
+}
+
+.video_info .left .row {
+    line-height: 25px;
+    font-size: 14px;
+}
+
+.video_info .left .row:nth-child(1) {
+    margin-top: 5px;
+}
+
+.video_info .left .row .title {
+    display: inline-block;
+    width: 100px;
+    text-align: right;
+    vertical-align: top;
+}
+
+.video_info .left .row .content {
+    display: inline-block;
+    width: 450px;
+}
+
+.video_info .right .imgBox span {
+    display: inline-block;
+    margin-top: 30px;
+}
+
+.ico {
+    margin: 5px 32px!important;
+    display: inline-block;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.ico_good:before {
+    content: url("../../../resources/img/page/v_good.png");
+    margin-right: 6px;
+}
+
+.ico_star:before {
+    content: url("../../../resources/img/page/v_star.png");
+    margin-right: 6px;
+}
+
+.ico_download:before {
+    content: url("../../../resources/img/page/v_download.png");
+    margin-right: 6px;
+}
+
+.ico_comment:before {
+    content: url("../../../resources/img/page/v_comment.png");
+    margin-right: 6px;
+}
+
+.ico_comment:hover {
+    text-decoration: underline;
+}
+
+.zero:hover {
+    text-decoration: none;
+}
+
+.warning {
+    display: inline-block;
+    margin-left: 5px;
+    color: #ff0000;
+}
+
+#video_point, #video_section {
+    position: relative;
+}
+
+#point_box, #section_box {
+    position: absolute;
+    width: 300px;
+    height: 380px;
+    background-color: #fff;
+    border: 1px solid #a9a9a9;
+    z-index: 2;
+}
+
+#point_box .tab {
+    height: 25px;
+}
+
+#point_box .tab span {
+    display: inline-block;
+    width: 50%;
+    height: 25px;
+    text-align: center;
+    cursor: pointer;
+    color: #d2d2d2;
+}
+
+#point_box .tab span.current {
+    background-color: #61a2d8;
+    color: #fff;
+}
+
+#point_box button, #section_box button {
+    margin-right: 15px;
+}
+
+video {
+    margin: 8px auto;
+    padding: 0;
+    width: auto;
+    height: 450px;
+}
+
+#back_reason+div {
+    display: none;
+    color: #f9715b;
+}
+
+/** 章节list **/
+dl, dt, dd {
+    float: none;
+}
+
+div#section_list {
+    height: 100%;
+    cursor: default;
+}
+
+div#section_list dt, div#section_list dd {
+    display: inline-block;
+}
+
+div#section_list dt {
+    margin-right: 5px;
+}
+
+dl.leaf {
+    padding-left: 2em;
+    cursor: pointer;
+}
+
+dl.leaf:hover, dl.selected {
+    color: #fff;
+    background-color: #61a2d8;
+}
+
+span.desc {
+    margin-top: 0!important;
+    font-size: 10px;
+}

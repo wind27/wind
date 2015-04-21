@@ -1,0 +1,26 @@
+.evaled-qust .qtitle{cursor:pointer;}
+.evaled-qust .qcontent{border:0;background:#FFFFFF;display:none;}
+
+.evaled-qust .report-panel{margin-bottom:20px;display:none;}
+.evaled-qust .question-option a.active{color:#FFFFFF;background:#70B4E0}
+.evaled-qust .report-panel.active{display:block;}
+
+a.btn-view-question{color:#70B4E0;}
+
+/* ��ѡ֪ʶ�� */
+.BtnBlue40{float:right;position:fixed;right:0;top:100px;width:40px;height:250px;background-color:#5aaadd;cursor: pointer;}
+.BtnBlue40:hover{background-color: #6fb3e0;}
+.BtnBlue40 #btnSelect{color: #fff;font-size: 14px;text-decoration: none;}
+.BtnBlue40 #btnSelect .ico-btn{background: url(../../img/ico/icoBasic.png) no-repeat -50px -90px;width: 15px;height: 15px;display: inline-block;position: absolute;top: 220px;left: 12px;}
+.BtnBlue40 #btnSelect .shink{background: url(../../img/ico/icoBasic.png) no-repeat -50px -75px;width: 15px;height: 16px;display: inline-block;position: absolute;top: 220px;left:12px;}
+
+.fontContent{text-align: center;margin: 3px;}
+.tanchuContent{width: 200px;position: fixed;top: 100px;right: 40px;height:330px;border: 1px solid #e9e9e9;background-color:#fff;z-index:10;}
+.tanchuContent .zhuti, .tanchuContent .zhuanti{margin: 10px;font-size: 14px;width:80%;float:left;}
+.tanchuContent ul li{margin-left: 10px;}
+.tanchuContent ul li div{width:150px;white-space:nowrap;text-overflow:ellipsis;-o-text-overflow:ellipsis;overflow: hidden;float:left;margin-bottom: 5px;}
+.tanchuContent ul .changeColor{color: deepskyblue;} 
+.tanchuContent ul li em{background: #fff url(../../img/ico/icoBasic.png) no-repeat -16px -108px;width: 15px;height: 15px;display: inline-block;float: right;margin-right: 10px;}
+.tanchuContent ul li a .shink{background: #fff url(../../img/ico/icoBasic.png) no-repeat 1px -108px;width: 15px;height: 15px;display: inline-block;float: right;margin-right: 10px;} 
+.tanchuContent .kong1 {font-size: 10px;margin: 0px 10px 0px 10px;width:80%;float:left;}
+.tanchuContent .kong2 {font-size: 10px;margin: 0px 10px 0px 10px;width:80%;float:left;}

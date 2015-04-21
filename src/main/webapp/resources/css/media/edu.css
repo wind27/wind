@@ -1,0 +1,431 @@
+body {
+    background-color: #f5f5f5;
+}
+
+#stageSel, #itemSel, #checkSel, #publishSel, #pubSel {
+    height: 25px;
+}
+
+.sort {
+    margin-left: 8px;
+}
+
+.sort a {
+    font-size: .9rem;
+    color: #ccc;
+    width: auto;
+    height: 25px;
+    padding: 2px 8px;
+    border: 1px solid #e4e4e4;
+    margin-right: 6px;
+}
+
+.sort a:hover {
+    background-color: #f2f2f2;
+}
+
+.sort a.selected {
+    color: #666;
+    background-color: #f2f2f2;
+}
+
+a[data-oper="disabled"] {
+    color: #d2d2d2!important;
+    background-color: #f2f2f2;
+    cursor: not-allowed;
+}
+
+a[data-oper="disabled"]:hover {
+    font-weight: normal!important;
+}
+
+.sort span {
+    margin: 0 12px;
+}
+
+.sort a.up:after {
+    content: "↑";
+}
+
+.sort a.down:after {
+    content: "↓";
+}
+
+ul.courseList {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+ul.courseList li {
+
+}
+
+div.course {
+    height: 150px;
+    border: 1px solid #ccc;
+    overflow: hidden;
+    margin: 5px 10px;
+}
+
+div.course_imgBox {
+    width: 220px;
+    height: 150px;
+}
+
+.img_box {
+    text-align: center;
+    margin-top: 5px;
+    position: relative;
+}
+
+div.course_content {
+    width: 830px;
+    height: 150px;
+    position: relative;
+}
+
+div.course_content section {
+    padding: 2px 0 2px 45px;
+}
+
+div.course_content div.infos {
+    margin: 5px 0;
+}
+
+div.course_content div.infos p {
+    line-height: 18px;
+    word-break: break-all;
+}
+
+div.course_content div.infos b {
+    color: #666;
+}
+
+div.course_content div.infos a {
+    color: blue;
+}
+
+div.course_content section span {
+    margin: 0 2px;
+}
+
+div.course_content section h4 {
+    font-weight: bold;
+    font-size: larger;
+}
+
+div.course_oper {
+    width: 146px;
+    height: 150px;
+}
+
+.oper {
+    width: 130px;
+    height: 150px;
+    margin-top: -10px;
+    margin-left: 15px;
+    text-align: center;
+    position: relative;
+}
+
+.oper>div {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+a[data-oper*="hidden"] {
+    display: none!important;
+}
+
+.border {
+    border-left: 1px solid #ccc;
+    width: 0;
+    height: 130px;
+    position: absolute;
+    top: 10px;
+    left: 15px;
+}
+
+.oper a {
+    font-size: .9rem;
+    color: #333;
+    width: 70px;
+    height: 25px;
+    line-height: 25px;
+    padding: 2px 8px;
+    border: 1px solid #e4e4e4;
+    display: block;
+    margin: 10px auto;
+    background-color: #f2f2f2;
+}
+
+.oper a.disabled {
+    color: #ccc;
+    cursor: not-allowed;
+}
+
+
+/** 三角形 **/
+.triangle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-top: 50px solid #ff0000;
+    border-right: 50px solid transparent;
+}
+
+.triangle span {
+    top: -45px;
+    left: -3px;
+    width: 50px;
+    position: absolute;
+    transform: rotate(-45deg);
+    color: #eee;
+}
+
+/** 待审核 **/
+.ang_pending {
+    border-top: 50px solid #cccccc;
+}
+
+.ang_pending span {
+    color: #333;
+}
+
+/** 审核中 **/
+.ang_checking {
+    border-top: 50px solid #ffcc33;
+}
+
+.ang_checking span {
+    color: #333;
+}
+
+/** 已退回 **/
+.ang_refused {
+    border-top: 50px solid #cc0066;
+}
+
+/** 待发布 **/
+.ang_disabled {
+    border-top: 50px solid #0099cc;
+}
+
+/** 已发布 **/
+.ang_enabled {
+    border-top: 50px solid #009966;
+}
+
+.ellipsis {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.intent {
+    text-indent: 2em;
+}
+
+/** 评论列表 **/
+ul.comment-list li {
+    border-top: 1px solid #ccc;
+}
+
+.comment {
+    height: 120px;
+    width: 600px;
+}
+
+.commentTitles {
+    width: 25%;
+    height: 120px;
+    text-align: center;
+    background-color: #f2f2f2;
+}
+
+.commentTitles div {
+    position: relative;
+    top: 10%;
+    transform: translateY(10%);
+}
+
+.commentTitles span {
+    display: block;
+    margin: 4px 0;
+}
+
+.commentContent {
+    width: 73%;
+    height: 112px;
+    padding: 4px 5px;
+}
+
+li.nodata {
+    text-align: center;
+    font-size: large;
+}
+
+/** 发布对象 **/
+
+.list_table tbody tr td {
+    height: 46px;
+    line-height: 46px;
+    padding: 0 0 0 15px;
+    text-overflow: ellipsis;
+}
+
+.list_table tbody tr td span {
+    display: inline-block;
+    width: 80px;
+    font-size: 1.1em;
+}
+
+.list_table input.checkbox {
+    height: auto;
+    width: auto;
+    margin-right: 5px;
+}
+
+.ico {
+    margin-right: 18px!important;
+    padding-left: 22px;
+    background: transparent url("/static/img/ico/ico_media_good.png") no-repeat left center;
+}
+
+.ico_good {
+    background-image: url("/static/img/ico/ico_media_good.png");
+}
+
+.ico_star {
+    background-image: url("/static/img/ico/ico_media_favicons.png");
+}
+
+.ico_share {
+    background-image: url("/static/img/ico/ico_media_share.png");
+}
+
+.ico_view {
+    background-image: url("/static/img/ico/ico_media_view.png");
+}
+
+.ico_comment {
+    background-image: url("/static/img/ico/ico_media_comment.png");
+}
+
+
+/** tip **/
+.memo, .record {
+    cursor: pointer;
+    color: blue;
+}
+
+.tip {
+    position: absolute;
+    border: 1px solid #e4e4e4;
+    background-color: #f8f8f8;
+    padding: 10px 15px 20px;
+    font-size: 12px;
+}
+
+.tip:before {
+    content: url("/static/img/ico/ico_arrow_left.png");
+    position: absolute;
+    top: 8px;
+    left: -8px;
+}
+
+.tip .close {
+    float: right;
+    cursor: pointer;
+}
+
+.tip .content {
+    overflow-x: hidden;
+    overflow-y: auto;
+    clear: both;
+    max-height: 300px;
+}
+
+.tip .content p {
+    line-height: 1.5em;
+    text-indent: 2em;
+}
+
+/** preview **/
+.previewBox h2 {
+    text-align: center;
+    font-weight: bold;
+    font-size: large;
+}
+
+.previewBox .desc {
+    color: #999;
+    line-height: 30px;
+}
+
+.previewBox .content {
+    clear: both;
+    word-break: break-all;
+    line-height: 1.1;
+}
+
+/** operation record **/
+ol.operation {
+    font-size: 12px;
+    max-height: 150px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+ol.operation span:not(:first-child) {
+    padding-left: 10px;
+}
+
+/** 发布弹窗 **/
+div.tpl_row {
+    height: 30px;
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+
+/** 审核 **/
+.announcementBox {
+    min-width: 700px;
+}
+
+.announcementBox .announcementTitle {
+    position: relative;
+}
+
+#announce_title {
+    font-size: large;
+    line-height: 40px;
+}
+
+.announcementBox .btns {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+.announcementBox .btns button {
+    padding: 3px 6px;
+    border-radius: 3px;
+    width: 85px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.announcementBox .row span:nth-child(2n) {
+    margin-left: 15px;
+}
+
+#announce_content {
+    line-height: 1.1;
+    word-break: break-all;
+}

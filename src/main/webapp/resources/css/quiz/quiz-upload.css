@@ -1,0 +1,87 @@
+.upload-plus{width:30px;height:30px;background:url(../../img/ico/icoBasic.png) no-repeat -71px -121px;float:left;margin-right:5px;}
+
+.paper-upload-panel {
+	height:210px;
+}
+
+a.paper-upload-btn{
+	cursor: pointer;
+    display: inline-block;
+    color: #FFFFFF;
+    text-decoration: none;
+    background-color: #70B4E0;
+   	width:140px;height:30px;
+   	line-height: 30px;
+   	padding:5px 0 5px 30px;
+   	margin:30px 20px;
+   	font-size:17px;
+   	-webkit-border-shadow: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	text-align:left;
+}
+
+.paper-upload-content{
+	height:140px;
+	padding:15px 0;
+	background-color:#FFFFFF;
+	border-bottom:1px solid #E6E6E6;
+}
+
+.paper-upload-content .paper-upload-left{
+	height:110px;padding:0 80px;float:left;
+	overflow:auto;width:230px;word-wrap:break-word;
+}
+
+.paper-upload-content .paper-upload-right{
+	width:370px;height:110px;padding:10px 15px;border-left:2px dotted #DDDDDD;float:left;font-size:13px;
+}
+
+.paper-detail-panel{
+	margin-top:10px;
+	border-top:1px solid #E6E6E6;
+	display:none;
+}
+
+/** 试卷描述信息编辑区 */
+.paper-content .paper-desc{
+	padding:15px;
+	background:#FFFFFF;
+}
+
+.paper-content .paper-desc > div{
+	height:40px;
+	padding:5px 0 ;
+}
+
+.paper-content .paper-desc .paper-name-input{
+	width:300px;height:25px;border: 1px solid #CCCCCC;margin-top:1px;
+}
+
+
+/******* 适应 ******/
+
+.control-group label{
+	font-weight:normal;
+	margin-right:10px;
+}
+
+.controls{
+	display:inline-block;
+}
+
+.controls select{
+	min-width:100px;height:25px;border: 1px solid #CCCCCC;
+}
+
+#paper_detail_content{
+	border-bottom: 1px solid #CCCCCC;
+}
+
+/** 取消上传按钮 */
+#reload_paper{
+	margin-left:20px;
+	text-decoration:underline;
+	line-height:30px;
+}

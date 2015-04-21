@@ -1,0 +1,36 @@
+.qbody dd img, .qcontent dd img{max-width:650px;}
+.q-content-bar{
+	background-color:#F7F7F7;
+	height:25px;
+	font-size:12px;
+	line-height:25px;
+	padding:0 3px;
+	border-bottom:1px solid #CCCCCC;
+}
+
+
+
+.error-report{display:block;line-height:20px;padding-left:5px;background:#FFEBE5;}
+.error-report dt,.error-report dd{display:inline-block;}
+.error-report dd{margin-right:5px;text-align:left;}
+
+
+.qtitle2{cursor:pointer;}
+.qcontent2{border:0;background:#FFFFFF;display:none;}
+.qcontent2 > dt {text-align:right;color:#999999;}
+
+.qbody2.active .qcontent2{display:block;}
+.qbody2.active .qcontent2.report-panel{display:none;}
+
+.qmain{display:block;}
+.report-panel{margin-bottom:20px;display:none;}
+
+
+.question-option a.active{color:#FFFFFF;background:#70B4E0}
+
+
+.report-panel.active{display:block;}
+
+
+
+

@@ -1,0 +1,252 @@
+@charset "utf-8";
+/* CSS Document 公共样式 */
+
+/* reset */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td{padding:0;margin:0;}
+table{border-spacing:0; border-collapse:collapse;}
+fieldset,img{border:0;}
+address,caption,cite,code,dfn,em,strong,th,var,i{font-style:normal;font-weight:400;}
+ol,ul{list-style:none;}
+caption,th{text-align:left;}
+h1,h2,h3,h4,h5,h6{font-weight:400;font-size:100%;} 
+sup{vertical-align:text-top;}
+sub{vertical-align:text-bottom;}
+legend{color:#000;}
+input,textarea,select,button,option{font-family:inherit;font-size:inherit;font-weight:inherit;}
+q:before,q:after{content:'';}
+.clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+* html .clearfix{zoom: 1;}      
+*:first-child + html .clearfix{zoom: 1;} 
+abbr,acronym{border:0;}
+em{ font-style:normal;}
+*:focus {outline: none;}
+
+/* global */
+body { position:relative;font-size:12px; font-family:"微软雅黑"; color:#000; background:#fff;}
+a{text-decoration:none;cursor:pointer;}
+a:hover{text-decoration:none;}
+a:active, a:focus{-moz-outline:none;outline:none;ie-dummy:expression(this.hideFocus=true);}
+dl,dt,dd{ float:left;}
+b{font-weight:bold;}
+.mr5{ margin-right:5px;}
+
+/* container */
+
+.container .mainWrap{ width:1000px; margin:16px auto 0; position:relative;}
+.container .mainWrap .mainIndex{ overflow:hidden; border:1px solid #cccccc; background-color:#e6e6e6;}
+
+.container .mainWrap .mainIndex .mainCon{ width:798px; min-height:775px; float:left; background:url(../../img/bg/bg_nav.gif) repeat-y 0 0; padding:0 0 20px 5px; margin:0 0 0 -5px; background-color:#fff; }
+.container .mainWrap .mainIndex .mainCon .mainTitle{ border-bottom:1px solid #ccc; border-left:3px solid #6fb3e0; height:40px; line-height:40px; background-color:#f7f7f7; padding:0 0 0 12px; font-size:16px; color:#333333;}
+.container .mainWrap .mainIndex .mainCon .mainTitle .titext{ float:left; font-size:14px; color:#2684cc; font-weight:bold; padding:0 0 11px 0; border-bottom:2px solid #2684cc;}
+.container .mainWrap .mainIndex .mainCon .mainTitle .titLink{ display:block; color:#b8b8b8; float:right}
+.container .mainWrap .mainIndex .mainCon .mainTitle .titLink.titLink01{ color:#1a7cce;}
+.container .mainWrap .mainIndex .mainCon .mainPart{ overflow:hidden}
+.container .mainWrap .mainIndex .mainCon .conBox{ overflow:hidden; position:relative;}
+.container .mainWrap .mainIndex .mainCon .mainPart .leftConBox{width:350px;border:1px solid #CCCCCC;margin-left:25px;margin-top:40px;float:left;}
+.container .mainWrap .mainIndex .mainCon.mainCon01{ width:100%; background-image:none; padding-left:0; margin:0}
+
+.container .footer{ padding:20px 0 50px 0;}
+.container .footer p{ text-align:center; color:#333333; height:20px; line-height:20px;}
+.container .footer p em{ color:#0000ff; font-weight:bold;}
+
+/* longin */
+.container.login_container{ background:url(../../img/bg/bg_loginBg.gif) repeat 0 0;}
+.container.login_container .header{ background:#fff url(../../img/bg/bg_loginLine.gif) repeat-x 0 100%; padding:0 0 4px 0; height:82px;}
+.container.login_container .header .headLogo{ float:left; margin:13px 0 0 0;}
+.container.login_container .mainWrap{ margin:40px auto 0;}
+.container.login_container .mainWrap .mainIndex{ background:url(../../img/bg/bg_loginCon.png) no-repeat 0 0; border:none; min-height:560px; position:relative;}
+.loginBox{ width:276px; float:right; margin:35px 70px 0 0;}
+.loginBox .loginTitle{ border-bottom:2px solid #fff; position:relative; height:40px;}
+.loginBox .loginTitle p{ border-bottom:2px solid #6fb3e0; float:left; padding:0 0 13px 0; font-family:'微软雅黑'; font-size:20px; color:#666;}
+.loginBox .loginCon { overflow:hidden;}
+.loginBox .loginCon .loginHint{ height:20px; line-height:20px; text-align:right; color:#f19149;}
+.loginBox .loginCon .loginList{ overflow:hidden}
+.loginBox .loginCon .loginList .loginForm{ border:1px solid #f3f9fd;}
+.loginBox .loginCon .loginList .loginForm .formBox{ background-color:#fff; border:1px solid #c5def3; padding:9px 0; overflow:hidden}
+.loginBox .loginCon .loginList .loginForm .formBox:hover{ border:1px solid #e7bfa4;}
+.loginBox .loginCon .loginList .loginForm .formBox span{ background:url(../../img/ico/icoBasic.png) no-repeat 0 0; width:35px; height:20px; border-right:1px solid #999; float:left}
+.loginBox .loginCon .loginList .loginForm .formBox .icoUers{ background-position:-45px -34px;}
+.loginBox .loginCon .loginList .loginForm .formBox .icoPsw{ background-position:-69px -34px;}
+.loginBox .loginCon .loginList .loginForm .formBox .inputText{ border:none; color:#999; padding:0 10px; width:215px;}
+.loginBox .loginCon .loginList .loginForm.loginForm01{width:116px; float:left; margin:4px 0 0 0;}
+.loginBox .loginCon .loginList .loginForm.loginForm01 .formBox .inputText{ width:93px; text-align:center}
+
+.loginBox .loginCon .loginBtn{ margin:18px 0 0 0;}
+.loginBox .loginCon .loginBtn input{ width:270px; height:40px; line-height:40px; background-color:#6fb3e0; font-size:18px; text-align:center; color:#fff; cursor:pointer; border:none; border-radius:2px; }
+.loginBox .loginCon .loginBtn input:hover{ background-color:#5aaadd;}
+.loginBox .loginCon .loginCode{ float:left; margin:0 0 0 6px; width:150px; text-align:center}
+.loginBox .loginCon .loginCode a{ display:block}
+.loginBox .loginCon .loginCode .infoCode{ width:150px; height:50px;}
+.loginBox .loginCon .loginCode .infoCut{ margin:5px 0 0 0; color:#666666;}
+
+.loginBox .loginCon .loginPsw{ clear:both; margin:10px 0 0 0; overflow:hidden}
+.loginBox .loginCon .loginPswLf{ float:left}
+.loginBox .loginCon .loginCkb{ float:left; margin:1px 8px 0 0;}
+.loginBox .loginCon .loginLbl{ float:left; color:#9e9e9e; }
+.loginBox .loginCon .loginPswRt{ float:right}
+.loginBox .loginCon .loginPswRt a{ color:#9e9e9e;}
+
+
+
+
+/* 回到顶部 */
+.BackToTop{ position:absolute; width:35px;background-color:#6fb3e0; border-radius:5px; right:-45px; bottom:0;}
+.BackToTop a{height:103px; display:table-cell; vertical-align:middle; letter-spacing:6px; text-align:center; word-wrap:break-word; word-break:normal; color:#fff; padding:0 0 0 6px;}
+
+
+/* 蓝色按钮 高22px 纯色不带图 */
+.conBtnWrap{ margin:30px auto 0; overflow:hidden; width:280px;}
+.BtnBlue22{ float:left; margin:0 0 0 10px;}
+.BtnBlue22 a.btnSave{ height:22px; line-height:22px;  padding:0 20px; background-color:#6fb3e0; display:block; color:#fff;}
+.BtnBlue22 a.btnSave:hover{ background-color:#3091d1;}
+
+/* 灰色按钮 高22px 纯色不带图 */
+.BtnGray22{ float:left; margin:0 0 0 10px;}
+.BtnGray22 a.btnSave{ height:22px; line-height:22px;  padding:0 20px; background-color:#e5e5e5; display:block; color:#000;}
+.BtnGray22 a.btnSave:hover{ background-color:#d2d0d0;}
+
+/* 白色按钮 高28px 纯色不带图 */
+.BtnWhite22{ float:left; margin:0 0 0 2px;}
+.BtnWhite22 a.btnSave{ height:28px; line-height:28px; border:1px solid #c0c3cf; padding:0 20px; display:block; color:#000;}
+.BtnWhite22 a.btnSave:hover{ background-color:#fff;}
+
+/* 橘色按钮 高30px 纯色不带图 */
+.BtnOrange30{ float:left; }
+.BtnOrange30 a.btnSave{ height:30px; line-height:30px; background-color:#feb04a; padding:0 30px; display:block; color:#fff; border-radius:5px; font-size:14px;}
+.BtnOrange30 a.btnSave:hover{ background-color:#f1a33c;}
+
+/* 灰色按钮 高30px 纯色不带图 */
+.BtnGray30{ float:left; margin:0 0 0 40px;}
+.BtnGray30 a.btnSave{ height:30px; line-height:30px; background-color:#f7f7f7; padding:0 30px; display:block; color:#808080; border:1px solid #e6e6e6; border-radius:5px; font-size:14px;}
+.BtnGray30 a.btnSave:hover{ background-color:#eceaea;}
+
+
+/* 表单 */
+.inputSelect{ border:1px solid #d9d9d9; height:20px; line-height:20px; float:left}
+.inputText{ border:1px solid #d9d9d9; height:20px; line-height:20px; padding:0 5px; float:left}
+.inputRadio { float:left; margin: 2px 5px 0 0;}
+.inputCheckbox{ float:left; margin: 2px 5px 0 0;}
+
+/* 左侧树 tree */
+.sdbTreeCon{ margin:12px 10px;}
+.sdbTreeCon .treeOper{ overflow:hidden;}
+.sdbTreeCon .treeOper .operLf{ float:left}
+.sdbTreeCon .treeOper .operRt{ float:right}
+.sdbTreeCon .treeOper a{ color:#1476c8;}
+.sdbTreeCon .treeOper a.unfold{ margin:0 10px 0 0;}
+.sdbTreeCon .treeOper a.shrink{ margin:0 0 0 10px;}
+.sdbTreeCon .treeOper .operRt .opAll{ height:16px; line-height:16px; color:#2684cc; display:block; padding:0 2px;}
+.sdbTreeCon .treeOper .operRt .opAll.current{ background-color:#2684cc; color:#ffffff;}
+
+.treewrap{ margin:20px 0 0 0;}
+.treewrap .treeRoot{ color:#303030}
+.treewrap .treeRoot .treeLi{ white-space:nowrap;}
+.treewrap .treeRoot .treeLi .tree1Node{ padding-left:10px;}
+.treeLi .tree1Node a {display:inline-block; width:14px;  height:28px; line-height:28px; text-align:left; text-decoration: none; vertical-align: middle;}
+.treewrap .treeRoot .treeLi .tree1Node .tree1Info{ }
+.treewrap .treeRoot .treeLi .tree1Node .tree1Info .tree1NodeIndent .tree1NodeLine1{ background:url(../../img/ico/ico_treeLine1.gif) no-repeat 0 0;}
+.treewrap .treeRoot .treeLi .tree1Node .tree1Info .tree1NodeIndent .tree1NodeLine2{ background:url(../../img/ico/ico_treeLine2.gif) no-repeat 0 0;}
+.treewrap .treeRoot .treeLi .tree1Node .tree1Info .tree1NodeIndent .tree1NodeLine3{ background:url(../../img/ico/ico_treeLine3.gif) no-repeat 0 0;}
+.tree1NodeIndent b{ display:inline-block; float:left; width:17px; height:28px;}
+.treewrap .treeRoot .treeLi .tree1Node a.tree1Aarrow{ background:url(../../img/ico/ico_treeOff.gif) no-repeat 0 7px;}
+.treewrap .treeRoot .treeLi .tree1Node a.tree1Active{ background:url(../../img/ico/ico_treeOn.gif) no-repeat 0 7px;}
+.treewrap .treeRoot .treeLi .tree1Node a.tree1Line{ background:url(../../img/ico/ico_treeLine4.gif) no-repeat 0 0;}
+.treewrap .treeRoot .treeLi .tree1Node .tree1NodeName{color:#303030; display:inline-block; line-height:28px;   margin-left:5px; white-space:nowrap;}
+.treeRoot .current{ font-weight:bold}
+.treewrap .treeRoot .treeLi .tree1Node .tree1NodeName.current:hover { color:#303030; display:inline-block; line-height:28px;   margin-left:5px; white-space:nowrap; text-decoration:none;}
+
+/* 搜索结果 */
+.tipsBox{ height:30px; line-height:30px; background-color:#ffebe5; padding:0 10px;}
+
+/* 分页 Page */
+.conPageWrap{ overflow:hidden; margin:20px 0;}
+.conPageWrap .conPage{ width:630px; margin:0 auto;}
+.conPageWrap .conPage .pageNumber{ float:left; margin:0 0 0 10px;}
+.conPageWrap .conPage .pageNumber span{ background-color:#FFFFFF; border:1px solid #D8D8D8; float:left; margin:0 5px; height:21px; line-height:21px; padding:0 8px; cursor:pointer;}
+.conPageWrap .conPage .pageNumber span.current{background-color:#2684cc; border:1px solid #2684cc;}
+.conPageWrap .conPage .pageNumber span.current a{ color:#ffffff;}
+.conPageWrap .conPage .pageNumber span.current:hover a{ color:#ffffff;}
+.conPageWrap .conPage .pageNumber span:hover{ border:1px solid #2684cc; background-color:#2684cc; }
+.conPageWrap .conPage .pageNumber span:hover a{ color:#fff;}
+.conPageWrap .conPage .pageNumber .pagePre{ }
+.conPageWrap .conPage .pageNumber .pageEllipsis{ background-color:none; border:none; color:#303030; padding:0; font-weight:bold;}
+.conPageWrap .conPage .pageNumber .pageEllipsis:hover{ border:none; background:none;}
+.conPageWrap .conPage .pageNumber span a { color: #333331; text-decoration: none;}
+.conPageWrap .conPage .pageTotal{ float:left; margin: 0 0 0 10px; }
+.conPageWrap .conPage .pageTotal .pageLabel{ display:inline-block; float:left; line-height:23px; margin:0 0 0 20px;}
+.conPageWrap .conPage .pageTotal .pageLabel span{ margin:0 2px;}
+.conPageWrap .conPage .pageTotal .pageBox{ float:left }
+.conPageWrap .conPage .pageTotal .pageBox label{ float:left; line-height:23px;}
+.conPageWrap .conPage .pageTotal .pageBox .text{ background:#FFFFFF; border:1px solid #D7D7D7; color:#505050; float:left; width:20px; height:20px; text-align:center; margin:0 10px;}
+.conPageWrap .conPage .pageTotal .pageBox .text:hover{ border:1px solid #2684cc;}
+
+
+/* 列表01 List01 */
+.list {height:100%; margin:0 0 20px 0;}
+.list .listTable{width:100%; border-top:1px solid #d8d8d8;}
+.list .listTable thead{overflow:hidden; }
+.list .listTable thead tr{table-layout:fixed; border-bottom:1px solid #d8d8d8; background-color:#f3f3f3; }
+.list .listTable thead tr th { height:32px; line-height:32px; white-space:nowrap; text-overflow:ellipsis; overflow:hidden;color:#666666; font-weight:bold; padding:0 10px; text-align:center;}
+.list .listTable tbody{ overflow:auto;}
+.list .listTable tbody tr { border-bottom:1px solid #d8d8d8;}
+.list .listTable tbody tr:hover{ background-color:#f8f8f8;}
+.list .listTable tbody tr:hover td a{ color:#1476c8;}
+
+.list .listTable tbody tr td{ height:35px; line-height:35px; white-space:nowrap; text-overflow:ellipsis; overflow:hidden; padding:0 10px; color:#505050; text-align:center; color:#999999; position:relative;}
+.list .listTable tbody tr td .oper{ display:inline-block;}
+.list .listTable tbody tr td .oper a{ font-size:12px; color:#1476c8; text-align:center;}
+.list .listTable tbody tr.even{ background-color:#f7f7f7}
+
+.list.list01 .listTable tbody tr td{ color:#3b3b3b;}
+.list.list01 .listTable tbody tr td a{ color:#3b3b3b;}
+.list.list01 .listTable tbody tr td a:hover{ color:#296fad; text-decoration:underline;}
+
+
+/* 弹窗 */
+.windowWrap{ width:100%; height:100%}
+.windowWrap .windowBox{ width:920px; position:relative; z-index:101; background-color:#ffffff;}
+.windowWrap .windowBox .windowTitle{ height:40px; line-height:40px; padding:0 12px 0 10px; background-color:#f7f7f7; border-bottom: 1px solid #cbcbcb;}
+.windowWrap .windowBox .windowTitle h3{ float:left; color:#505050; font-size:14px; }
+.windowWrap .windowBox .windowTitle .windowTools{ float:right; margin:10px 0 0 0; }
+.windowWrap .windowBox .windowTitle .windowTools a{ background:url(../../img/ico/icoBasic.png) no-repeat -25px -36px; width:20px; height:20px; display:block}
+.windowWrap .windowMask{ background-color:#ccc; width:100%; height:100%; left:0; opacity:0.5; position:absolute; top:0;  z-index: 100;}
+.conFormWrap{ overflow:hidden; margin:0 0 0 10px;}
+
+
+/* 下拉列表、下拉列表框 */
+.selectBoxWrap {position:relative;  float:left; margin:0 5px 0 0;}
+.selectBoxWrap .trigger { overflow:hidden; border:1px solid #d9d9d9; }
+.selectBoxWrap .trigger .selectText { float:left; display:block;  width:60px; height:20px; line-height:20px; border:0; padding:0 5px; background-color:#fff; color:#333333;}
+.selectBoxWrap .btnTrigger {float:left; width:20px; height:20px;  background:url(../../img/ico/icoBasic.png) no-repeat 0 0; }
+.selectBoxWrap .btnTrigger.show{ background-position:-100px -31px;}
+.selectBoxWrap .btnTrigger.hide{ background-position:-100px -47px;}
+.selectBoxWrap .selectBox { position:absolute; background:#fff; width:90px; left:0; top:21px; border:1px solid #d8d8d8; z-index:99; padding:5px 0; }
+.selectBoxWrap .selectBox .selectList { clear:both; overflow:hidden; }
+.selectBoxWrap .selectBox .selectList li { height:20px; line-height:20px; white-space:nowrap;text-overflow:ellipsis; overflow:hidden; padding:0 5px;}
+.selectBoxWrap .selectBox .selectList li a { color:#333; display:block;}
+.selectBoxWrap .selectBox .selectList li:hover { background:#eff2f9; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

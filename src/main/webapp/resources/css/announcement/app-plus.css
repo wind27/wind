@@ -1,0 +1,21 @@
+/************************ patch **************************/
+.tabs_cut_wrap, #list_panel {
+    background-color: #fff;
+}
+
+.title_oper {
+    padding: 0;
+}
+
+.title {
+    border-left: 3px solid #6fb3e0;
+    padding: 0 15px;
+}
+
+.tabs_cut li.current {
+    border-bottom-color: #61a2d8;
+}
+
+.history_con {
+    word-wrap: break-word;
+}

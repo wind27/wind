@@ -1,0 +1,38 @@
+.search-panel1{padding:5px 0;}
+.search-panel1 dl{float:none;}
+.search-panel1 .row{min-height:20px;padding: 5px 0;display:block;}
+
+.search-panel1 .row dt{ color:#505050;cursor:pointer; }
+.search-panel1 .row dt{ min-width:63px; text-align:right; margin:0 10px 0 0;}
+.search-panel1 .row dd{ color:#808080; display:inline-block; float:none; margin:0 5px 0 0; cursor:pointer; padding:0 10px;}
+.search-panel1 .row dd:hover, .search-panel1 .row dd.current{ background:#6FB3E0; color:#FFFFFF}
+.search-panel1 .row input{border: 1px solid #D9D9D9;height: 22px;line-height: 22px;padding:2px 5px;}
+.search-panel1 .row input.key{width:300px;}
+#search-key{margin-left:10px;}
+#search-key dd{margin:0;padding:0;}
+
+.sort-panel{border: 1px solid #D9D9D9;border-left:none;border-right:none;font-size:0;}
+.sort-panel .sort-option{display:inline-block;height:30px;line-height:30px;width:90px;border-right: 1px solid #D9D9D9;text-align:center;cursor:pointer;font-size:12px;}
+.sort-panel .sort-option:hover,.sort-panel .sort-option.current{background:#6FB3E0;color:#FFFFFF;}
+
+.resource-list{}
+.resource-list > div{}
+.resource-list > div dl{width:100%;}
+.resource-list > div dl dt{}
+.resource-list > div dl dd{text-align:left;color:#999999;padding-right:2%;}
+.resource-list > div dl.title{background: #E1EAF9;height: 25px;line-height: 25px;font-size: 14px;}
+.resource-list > div dl.title:hover{background: #FFE7C8;}
+.resource-list > div dl.title dd.option{float:right;display:none;font-size:12px;}
+.resource-list > div dl.title:hover dd.option{display:block;}
+
+.resource-list > div dl.title span{margin-left:5px;cursor:pointer;padding:0 5px;color:#000000;float:left;}
+.resource-list > div dl.title dd.option span:hover,.resource-list > div dl.title dd.option span.current{background: #6FB3E0;color: #FFFFFF;}
+.resource-list > div dl.rel-info{background: #F7F7F7;height: 20px;line-height: 20px;padding-left:1%;;float:left;width:99%}
+.resource-list > div dl.info{background: #FFFFFF;padding:5px 0 5px 10px;;float:left;}
+
+/** 挑选素材 */
+.thumbnail{width:182px;float:left;margin-right:10px;}
+.thumbnail .img-panel{display:block;height:135px;border:1px solid #CCCCCC;cursor:pointer;}
+.thumbnail .img-panel img{height:135px;width:180px;}
+.thumbnail .option{display:block;height:24px;margin:13px 0;line-height:24px;}
+.thumbnail .option .btn-commit{color:#FFFFFF;background:#70b4e0;float:right;width:60px;text-align:center;cursor:pointer;}

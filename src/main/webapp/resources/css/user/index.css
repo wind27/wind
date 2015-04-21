@@ -1,0 +1,104 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* 1-1课程模板列表 */
+.conBox .conFormList{ padding:10px 0 10px 16px;}
+.conBox .conFormList:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+.conBox .conFormList .conForm{ float:left; margin:0 10px 0 0 ;}
+.conBox .conFormList .conForm label{ float:left; height:20px; line-height:20px;}
+.conBox .conFormList .conForm .info{ float:left;}
+.conBox .conFormList .conForm .info span.infoLabel{ margin:2px 0 0 0 ; display:block}
+.conBox .conFormList .conForm label em{ color:#F15540; margin:0 5px;}
+
+/* 1-3编辑课程模板  1-4查看课程模板 */
+.container .mainWrap .mainIndex .mainCon .mainTitle span{ color:#296fad;}
+.container .mainWrap .mainIndex .mainCon.mainCon01 .mainPart .conBox .conFormList{ padding-left:30px}
+.container .mainWrap .mainIndex .mainCon.mainCon01 .mainPart .conBox .conFormList.conFormList01 .conForm{ margin-right:20px;}
+.moduleItem{ margin:0 28px 28px 28px;}
+.moduleItemTitle{ height:38px; line-height:38px; background-color:#e4f3ff; border:1px solid #cad7e3;}
+.moduleItemTitle span{ width:48%;display:block; float:left; color:#303030; text-align:center; font-weight:bold; font-size:14px;}
+.moduleItemTitle .titleLine{ border-right:1px solid #cad7e3; width:50%;}
+.treewrap.treewrap01{ margin:0; width:auto; border:1px solid #cde5f9; border-top:none; overflow:hidden}
+.treewrap.treewrap01 .treeRoot .treeLi{ }
+.treewrap.treewrap01 .treeRoot .treeLi .tree1Node { clear: both; border:1px solid transparent;border-bottom:1px solid #dfdfdf; position:relative; background-color:#f1f6fa; height:42px; line-height:42px; }
+.treewrap.treewrap01 .treeRoot .treeLi .treeUl .treeLi .tree1Node{border:none; background-color:#f8fbfd;} 
+.treewrap.treewrap01 .treeRoot .treeLi .treeUl.treeUl01 .treeLi .tree1Node{ background-color:#fff;}
+.treewrap.treewrap01 .treeRoot .treeLi .tree1Node .tree1Info { float:left; margin:0 10px 0 0;}
+.treewrap.treewrap01 .treeRoot .treeLi .tree1Node .tree1Info .tree1NodeFolder{ width:auto;}
+
+.treewrap.treewrap01 .treeRoot .treeLi .treeUl{ float:left; width:50%;}
+.treewrap.treewrap01 .treeRoot .treeLi .treeUl .treeLi{ border:1px solid transparent; border-bottom:1px solid #E4E4E4;}
+.treewrap.treewrap01 .treeRoot .treeLi .treeUl .treeLi .treeIco{ background:url(../../img/ico/icoBasic.png) no-repeat 0 -26px; width:16px; height:16px; display:inline-block; vertical-align: -6px;}
+.treewrap.treewrap01 .treeRoot .treeLi .tree1Node a.tree1Aarrow { background:url(../../img/ico/icoBasic.png) no-repeat -103px 11px;}
+.treewrap.treewrap01 .treeRoot .treeLi .tree1Node a.tree1Active{ background:url(../../img/ico/icoBasic.png) no-repeat -103px -11px;}
+.treewrap.treewrap01 .treeRoot .treeLi .tree1Node .tree1Info .tree1NodeIndent .tree1NodeLine3{ background-image:none;}
+
+.treewrap.treewrap01 .treeRoot .treeLi .treeUl.treeUl01{ float:right}
+.treewrap.treewrap01 .treeRoot .treeLi .treeUl.treeUl01 .treeLi{ border-left:1px solid #E4E4E4;}
+.treewrap.treewrap01 .treeRoot .treeLi .treeUl.treeUl01 .treeLi a.tree1NodeName{ color:#156fbb; width:auto; margin:0;}
+.treewrap.treewrap01 .treeRoot .treeLi .tree1Node .treeShow{ float:right; display:none}
+.treewrap.treewrap01 .treeRoot .treeLi .tree1Node .treeShow .showIco{background:url(../../img/ico/icoBasic.png) no-repeat 0 -48px; width:16px; height:16px; display:block; margin:14px 10px 0 0 ;}
+
+.treeSwBox{ border:1px solid #b8b8b8; padding:5px; position:absolute; top:16px; right:80px; overflow:hidden; width:70px; min-width:70px; z-index:99; background-color:#fff; display:none}
+.treeSwBox li{}
+.treeLi .tree1Node .treeSwBox li a{ display:block; color:#000; padding:0 5px; height:24px; line-height:24px; width:auto;}
+.treeSwBox li a:hover{  background-color:#e4f3ff;  }
+.treewrap.treewrap01 .treeRoot .treeLi .treeUl .treeLi:hover{ border:1px solid #86b8e1;}
+.treewrap.treewrap01 .treeRoot .treeLi .tree1Node:hover .treeSwBox{ display:block}
+.treewrap.treewrap01 .treeRoot .treeLi .tree1Node:hover .treeShow{ display:block}
+.treewrap.treewrap01 .treeRoot .treeLi .tree1Node:hover{ border:1px solid #86b8e1;}
+.treewrap.treewrap01 .treeRoot .treeLi .tree1Node:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+
+/* 1-3添加人员 */
+.formCon .formList .info.info01 .selectBoxWrap .trigger .selectText{ width:130px;}
+.formCon .formList .info .ifHint { color: #808080; float: left; font-size: 12px; margin: 2px 0 0 12px;}
+.formCon .formList .info .infoBox { float:left; margin:2px 40px 0 0; position:relative;}
+.formCon .formList .info .infoLabel { color:#505050; cursor:pointer; float:left;}
+.formCon .formList .info .list{ width:660px; border-left: 1px solid #d8d8d8; border-right: 1px solid #d8d8d8;}
+.formCon .formList .info .list .listTable thead tr th,
+.formCon .formList .info .list .listTable tbody tr td{ border-right:1px solid #d8d8d8}
+.formCon .formList .info .list .listTable .lineLast{ border-right:none}
+.formCon .formList .info .list .listTable tbody tr td .inputCheckbox{ margin:11px 5px 0 0;}
+.formCon .formList .info .list .listTable tbody tr td .infoBox{ margin:0 18px 0 0; float:left}
+
+
+/* 1-4添加角色 */
+
+.formCon{ overflow:hidden; margin:20px 0 0 20px;}
+.formCon .formList{ overflow:hidden; margin:0 0 20px 0;}
+.formCon .formList label{ text-align:right; float:left; margin:2px 20px 0 0; color:#505050; min-width:80px;}
+.formCon .formList label em{ color:#f15540; margin:0 5px;}
+.formCon .formList .info{ float:left;}
+.formCon .formList .info.info01 .inputText{ width:220px;}
+.tree1NodeFolder{ display:inline-block; margin-top:-2px; text-align: center; vertical-align: middle;}
+.formCon .formList .info .treewrap .treeRoot .treeLi .tree1Node { border-bottom: 1px solid #fff; clear: both; overflow: hidden; background-color:#fff6e5;}
+.formCon .formList .info .treewrap{ width:660px; margin:0;}
+.formCon .formList .info .treewrap .treeRoot .treeLi .treeUl .treeLi .tree1Node{ border-bottom:none; background-color:#edf6fd;} 
+.formCon .formList .info .treewrap .treeRoot .treeLi .treeUl .treeLi .treeUl .treeLi .tree1Node{ background-color:#fff;}
+.formCon .formList .info .treewrap .treeRoot .treeLi .treeUl .treeLi .tree1Node .tree1Info{ float:left; margin:0 10px 0 0;}
+.conBtnWrap.conBtnWrap01{ margin:0 0 0 120px;}
+.formCon .formList .info .treewrap .treeRoot .treeLi .tree1Node .tree1NodeName{ margin:0;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,11 @@
+.res-list tr{
+	height:50px;
+}
+
+.res-list td,th{
+	padding:0 5px;
+}
+
+.res-list .list-head{
+	background:gray;
+}

@@ -1,0 +1,520 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* 1-1-1知识点管理_模块列表02 */
+
+.list .listTable tbody tr td .treeSwBox{ position:absolute; top:107px; left:226px; }
+.list .listTable tbody tr td:hover .treeSwBox{ display:block;}
+.operBtn{ float:right; margin:0 10px 0 0;}
+.operBtn .BtnWhite22 .btnSave{ padding:0 10px 0 6px; font-size:12px;}
+.operBtn .BtnWhite22 .btnSave span{ background:url(../images/ico/icoBasic.png) no-repeat; width:14px; height:14px; display:inline-block; vertical-align:-4px; margin:0 6px 0 0;}
+.operBtn .BtnWhite22 .btnSave .addIco{ background-position:-26px 0 ;}
+.operBtn .BtnWhite22 .btnSave:hover .addIco{ background-position:-26px -17px; }
+.operBtn .BtnWhite22 .btnSave .editIco{ background-position:-64px 0; vertical-align:-3px;}
+.operBtn .BtnWhite22 .btnSave:hover .editIco{ background-position:-64px -17px; }
+.operBtn .BtnWhite22 .btnSave .delIco{ background-position:-45px 0;}
+.operBtn .BtnWhite22 .btnSave:hover .delIco{ background-position:-45px -17px; }
+.operBtn .BtnWhite22 .btnSave .returnIco{ background-position:-84px 0 ;}
+.operBtn .BtnWhite22 .btnSave:hover .returnIco{ background-position:-84px -17px; }
+.container .mainWrap .mainIndex .mainCon .mainTitle .operBtn{ margin-top:5px;}
+.conBox .conFormList .conForm{ float:left; margin:0 0 0 30px ;}
+#select_subject{border:1px solid #CCCCCC;}
+
+/*1-1-2知识点管理_专题编辑样式*/
+.container .mainWrap .mainIndex .mainCon .mainPart .conFormList{height:40px;padding:10px 0 10px 10px;background-color:#fff;}
+.container .mainWrap .mainIndex .mainCon .mainPart .conFormList .build{height:30px;line-height:30px;text-align:center;color:#666666;border:1px solid #C0C3CF;margin:0px;margin-top:5px;margin-left:2px;padding-right:10px;float:right;}
+.container .mainWrap .mainIndex .mainCon .mainPart .conFormList .ico{height:12px;width:12px;background-image:url(../images/ico/ico_idxNav.png);background-position:-25px 0px;float:left;margin:10px 5px;}
+.container .mainWrap .mainIndex .mainCon .mainPart .conFormList .ico:hover{height:12px;width:12px;background-image:url(../images/ico/ico_idxNav.png);background-position:-40px 0px;float:left;margin:10px 5px;}
+.container .mainWrap .mainIndex .mainCon .mainPart .conFormList .ico0{height:14px;width:14px;background-image:url(../images/ico/ico_idxNav.png);background-position:0px -25px;float:left;margin:10px 5px;}
+.container .mainWrap .mainIndex .mainCon .mainPart .conFormList .ico0:hover{height:14px;width:14px;background-image:url(../images/ico/ico_idxNav.png);background-position:-20px -25px;float:left;margin:10px 5px;}
+.container .mainWrap .mainIndex .mainCon .mainPart .conFormList .ico1{height:13px;width:11px;background-image:url(../images/ico/ico_idxNav.png);background-position:-55px 0px;float:left;margin:10px 5px;}
+.container .mainWrap .mainIndex .mainCon .mainPart .conFormList .ico1:hover{height:13px;width:11px;background-image:url(../images/ico/ico_idxNav.png);background-position:-70px 0px;float:left;margin:10px 5px;}
+/*添加资源弹框*/
+
+.formCon{ overflow:hidden; margin:20px 0 0 0;}
+.formCon .formList{ overflow:hidden; margin:0 0 20px 0;}
+.formCon .formList label{ text-align:right; float:left; margin:2px 20px 0 0; color:#296fad; min-width:80px;}
+.formCon .formList label em{ color:#f15540; margin:0 5px;}
+.infoText{ width:542px; height:22px; line-height:22px;background:#FFFFE1;border:1px solid #6FB3E0; padding:0 5px; float:left}
+.formCon .formList .info .infoBox{ margin:2px 40px 0 0; float:left; position:relative;}
+.infoCheckbox{ float:left; margin:2px 5px 0 0;}
+.infoLabel{ float:left; color:#808080; cursor:pointer;}
+.conFormWrap .formCon .formList .info .infoAdd .AddBoxWrap{  float:left; margin: 0 10px 0 0;position:relative;}
+.conFormWrap .formCon .formList .info .infoAdd .AddBoxWrap .serach01{width: 95px;height: 30px;line-height: 30px;color: #fff;background-color: #feb04a;border-style: none;border-radius: 5px;font-size: 14px;
+position:absolute; top:100px;}
+.conFormWrap .formCon .formList .info .infoAdd .AddBoxWrap .serach02{width: 95px;height: 30px;line-height: 30px;color: #fff;background-color: #feb04a;border-style: none;border-radius: 5px;font-size: 14px;
+position:relative;top:150px;}
+.conFormWrap .formCon .formList .info .infoAdd .AddBoxWrap.AddBoxWrap01{ margin:0 0 0 10px}
+.conFormWrap .formCon .formList .info .infoAdd .AddTitle{ height:30px; line-height:30px; background-color:#f7f7f7;font-weight:bold; color:#999999; padding:0 10px; }
+.conFormWrap .formCon .formList .info .infoAdd .AddBox{ float:left; border:1px solid #cccccc; width:168px; height:182px; padding:5px 0; overflow-y:auto}
+.conFormWrap .formCon .formList .info .infoAdd .AddBox li{ height:20px; line-height:20px; padding:0 10px; cursor:pointer;}
+.conFormWrap .formCon .formList .info .infoAdd .AddBox li.current,.conFormWrap .formCon .formList .info .infoAdd .AddBox li.current:hover{ background-color:#50a2df; color:#ffffff;}
+.conFormWrap .formCon .formList .info .infoAdd .AddBox li:hover{ background-color:#eff2f9;}
+.conFormWrap .formCon .formList .info .infoAdd .BtnWrap .search{ margin:0 0 16px 0;}
+.conBtnWrap { margin:0 300px 8px;}
+.conBtnWrap .search{width: 95px;height: 30px;line-height: 30px;color: #fff;background-color: #feb04a;border-style: none;border-radius: 5px;font-size: 14px;left: 20px;margin:0 20px;}
+.formCon .formList.formList01 label{ clear:both; float:none}
+.infoSelect{ width:71px; height:23px; line-height:23px; border:1px solid #cccccc; margin:0 10px 0 0; color:#565656;}
+.infoSelect option{ padding:2px 5px; }
+.infoSelect option:hover{ background-color:#eff2f9;}
+
+/*1-1-3知识点管理_进入单元主题样式*/
+.container .mainWrap .mainIndex .mainCon.mainCon01{ width:100%}
+.container .mainWrap .mainIndex .mainCon .mainTitle span{ color:#296fad;}
+.container .mainWrap .mainIndex .mainCon .mainPart{padding: 10px;}
+.container .mainWrap .mainIndex .mainCon .mainPart .leftConBox{width:150px;border:1px solid #CCCCCC;margin-left:25px;margin-top:40px;float:left;}
+.container .mainWrap .mainIndex .mainCon .mainPart .leftConBox li{width:130px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;-o-text-overflow:ellipsis;-moz-binding:url('ellipsis.xml#ellipsis');}
+.container .mainWrap .mainIndex .mainCon .mainPart .build{margin-left:20px;color:#666666;float:right;}
+.container .mainWrap .mainIndex .mainCon .mainPart .build:hover{color:#296fad;cursor:pointer;}
+.container .mainWrap .mainIndex .mainCon .mainPart .head{background-color:#F7F7F7;height:30px;line-height:30px;padding:0 10px;}
+.container .mainWrap .mainIndex .mainCon .mainPart .leftConBox span{font-weight:bold;}
+.container .mainWrap .mainIndex .mainCon .mainPart .rightConBox{width:560px;border:1px solid #CCCCCC;margin-right:25px;margin-top:40px;padding-bottom:20px;float:right;}
+.container .mainWrap .mainIndex .mainCon .mainPart .rightConBox li span{width:510px;float:left;font-weight:normal;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;-o-text-overflow:ellipsis;-moz-binding:url('ellipsis.xml#ellipsis');}
+.container .mainWrap .mainIndex .mainCon .mainPart .rightConBox span{font-weight:bold;}
+.container .mainWrap .mainIndex .mainCon .mainPart .rightConBox .letter{width:100px;text-align:left;float:right;}
+
+.tableContent li{height:30px;line-height:30px;padding:0 10px;border-top:1px solid #CCCCCC;cursor:pointer;}
+.tableContent li:hover{background-color:#EEF9FF;}
+.tableContent li.current{background-color:#6FB3E0;color:#fff;}
+
+.list .listTable{border:1px solid #D8D8D8;}
+
+.rfloat{float:right;}
+.btn-blue22{ float:left;text-align:center;}
+.btn-blue22 a.btnSave{ height:22px; line-height:22px;  padding:0 15px; background-color:#6fb3e0; display:block; color:#fff;font-size:12px;}
+.btn-blue22 a.btnSave:hover{ background-color:#3091d1;}
+
+.margin-top5{margin-top:5px;}
+.margin-left5{margin-left:5px;}
+
+/** add */
+.series_row{cursor:pointer;}
+
+
+
+/** add by shen 2014.12.18 **/
+
+/** grade_list.jsp **/
+.btn {
+    display: inline-block;
+    font-size: 12px;
+    border: 1px solid #d9d9d9;
+    background-color: #fff;
+    width: 25px;
+    height: 17px;
+    padding: 1px 10px;
+    color: #000;
+}
+
+.materialTable {
+    width: 100%;
+}
+
+.materialTable th {
+    font-weight: bold;
+    font-size: 1.1em;
+    height: 30px;
+    text-align: center;
+}
+
+.materialTable tr {
+    height: 26px;
+    cursor: default;
+}
+
+.materialTable tbody tr:hover {
+    background-color: #ffffee;
+}
+
+.materialTable tr.first td {
+    height: 5px;
+    padding: 0;
+    margin: 0;
+    vertical-align: inherit;
+    font-size: 0;
+}
+
+.materialTable tr.first div {
+    border-top: 1px solid #ccc;
+    height: 5px;
+}
+
+.materialTable td {
+    text-align: center;
+}
+
+/** directory.jsp **/
+.container .mainWrap .mainIndex .mainCon .mainPart {
+
+}
+
+.container .mainWrap .mainIndex .mainCon .mainPart .leftConBox {
+    margin: 0;
+    width: 150px;
+    border: 1px solid #CCCCCC;
+}
+
+.container .mainWrap .mainIndex .mainCon .mainPart .rightConBox {
+    margin: 0;
+    width: 815px;
+}
+
+.dirTitle {
+    height: 30px;
+    background-color: #e4e4e4;
+}
+
+.dirTitle span {
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+    vertical-align: -webkit-baseline-middle;
+}
+
+.dirTitle span:nth-child(1) {
+    width: 420px;
+}
+
+.dirTitle span:nth-child(2) {
+    width: 210px;
+}
+
+.dirTitle span:nth-child(3) {
+    width: 155px;
+}
+
+#gradeName {
+    font-size: 16px;
+}
+
+ul.chapterList {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: block;
+}
+
+ul.chapter_2, ul.chapter_3 {
+    padding-left: 30px;
+}
+
+div.chapter_box {
+    display: block;
+    height: 40px;
+    margin: 3px 0;
+    padding: 5px 10px;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    border: 1px solid #ccc;
+    background: #999;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+div.chapter_box_1 {
+    color: #eee;
+}
+
+div.chapter_box_2 {
+    background-color: #ccc;
+}
+
+div.chapter_box_3 {
+    background-color: #eee;
+}
+
+div.chapter_box span {
+    display: inline-block;
+    line-height: 2;
+}
+
+span.list_preTitle {
+    width: 8%!important;
+    margin-right: 8px;
+}
+
+input:only-child {
+    margin-top: 2px;
+}
+
+span.list_title {
+    width: 40%!important;
+}
+
+ul.chapter_2 span.list_title {
+    width: 50%!important;
+}
+
+span.list_title span {
+    display: inline-block;
+    width: auto!important;
+    max-width: 260px;
+}
+
+span.list_title>a {
+    margin-left: 12px;
+}
+
+span.list_content {
+    width: 25%!important;
+}
+
+span.list_content span {
+    line-height: 1;
+    width: 100%!important;
+    padding: 1px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+span.list_oper {
+    width: 5%!important;
+}
+
+div.chapter_box a:hover {
+    font-weight: bold;
+}
+
+._hidden {
+    display: none;
+}
+
+.wrong {
+    width: 100px!important;
+    color: #ff0000;
+    float: none!important;
+    vertical-align: top;
+    margin-left: 12px;
+}
+
+/** relation.jsp **/
+.addRelation {
+    font-size: 14px;
+    width: auto;
+    height: 20px;
+}
+
+.relationBox {
+    width: 900px;
+    text-align: left;
+    padding: 0 15px;
+}
+
+.relationBox>div {
+    margin: 10px 0 0 0;
+}
+
+label.lab {
+    display: inline-block;
+    width: 80px;
+    text-align: right;
+    vertical-align: top;
+}
+
+.stageBox {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.stageBox label {
+    margin-right: 15px;
+}
+
+.inputText {
+    line-height: 24px;
+    height: 24px;
+    border: 1px solid #d9d9d9;
+    height: 25px;
+    line-height: 25px;
+    padding: 0 5px;
+    float: left;
+}
+
+button {
+    height: 25px;
+    display: inline-block;
+    cursor: pointer;
+    background-color: #fff;
+    border: 1px solid #e4e4e4;
+}
+
+button:hover {
+    background-color: #bbb;
+}
+
+button#save {
+    width: 60px;
+    vertical-align: top;
+
+}
+
+button#search {
+    width: 60px;
+}
+
+#search_input {
+    margin: 5px;
+    width: 325px;
+    border: 1px solid #d9d9d9;
+    height: 25px;
+}
+
+.outer_box {
+    width: 100%;
+
+}
+
+.outer_box>div {
+    display: inline-block;
+    float: left;
+}
+
+.box {
+    border: 1px solid #e4e4e4;
+    width: 400px;
+    height: 300px;
+}
+
+.center_box {
+    width: 80px;
+    height: 300px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.center_box div {
+    margin-top: 100px;
+}
+
+.center_box button {
+    width: 70px;
+    margin-bottom: 15px;
+    background-color: #fdb24a;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.relTitle {
+    width: 100%;
+    text-align: center;
+}
+
+.relTitle span {
+    display: inline-block;
+    font-weight: 600;
+    font-size: 1.1em;
+}
+
+.relTitle span:nth-child(1) {
+    width: 28%;
+}
+
+.relTitle span:nth-child(2) {
+    width: 20%;
+}
+
+.relTitle span:nth-child(3) {
+    width: 48%;
+}
+
+ul.relList {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 245px;
+    overflow-y: auto;
+}
+
+ul.relList li {
+    height: 25px;
+}
+
+ul.relList li {
+    cursor: pointer;
+}
+
+ul.relList li div {
+    height: 25px;
+    line-height: 25px;
+}
+
+ul.relList li.selected {
+    background-color:#50a2df; 
+    color:#ffffff;
+}
+
+ul.relList li:hover {
+    background-color: #edf9ff;
+}
+
+ul.relList li div span {
+    display: inline-block;
+    font-size: .9em;
+    text-align: center;
+}
+
+ul.relList li div span:nth-child(1) {
+    width: 28%;
+}
+
+ul.relList li div span:nth-child(2) {
+    width: 20%;
+}
+
+ul.relList li div span:nth-child(3) {
+    width: 48%;
+}
+
+ul.relList span {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+#rightList {
+    height: 278px;
+}
+
+#relation_list a {
+    color: #296fad;
+    margin-right: 10px;
+}
+
+.warning {
+    display: none;
+    color: #ff0000;
+    vertical-align: top;
+}
+
+.tip {
+    position: absolute;
+    border: 1px solid #999;
+    background-color: #f5f5f5;
+    display: none;
+}
+
+.tip table {
+    padding: 5px;
+    font-size: 12px;
+    border-collapse: collapse;
+}
+
+.tip table th {
+    text-align: center;
+    font-weight: bold;
+}
+
+.tip table th, .tip table td {
+    padding: 0.3em 1em;
+}
+
+.mark:after {
+    content: "*";
+    color: #ff0000;
+}

@@ -1,0 +1,15 @@
+div.course_content section {
+    padding: 2px 0 2px 15px;
+}
+
+.oper a {
+    top: 50%;
+}
+
+input.date {
+    height: 25px;
+    line-height: 25px;
+    width: 130px;
+    border: 1px solid #a9a9a9;
+    background: transparent url(/static/img/bg/bg_cal.png) no-repeat scroll 110px center/16px 16px;
+}

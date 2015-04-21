@@ -1,0 +1,43 @@
+@charset "utf-8";
+/* CSS Document */
+
+#main:after   
+{   
+content: '[DO NOT LEAVE IT IS NOT REAL]';   
+display: block;   
+height: 0;   
+clear: both;   
+visibility: hidden;   
+}   
+#main   
+{   
+display: inline-block;
+overflow: hidden;
+}
+/*\*/   
+#main   
+{   
+display: block;   
+}   
+/* end easy clearing */   
+/*\*/   
+.leftsidebar, #content01   
+{   
+padding-bottom: 32767px !important;   
+margin-bottom: -32767px !important;   
+}   
+@media all and (min-width: 0px) {   
+.leftsidebar, #content01   
+{   
+padding-bottom: 0 !important;   
+margin-bottom: 0 !important;   
+}   
+.leftsidebar:before, #content01:before   
+{   
+content: '[DO NOT LEAVE IT IS NOT REAL]';   
+display: block;   
+background: inherit;   
+padding-top: 32767px !important;   
+margin-bottom: -32767px !important;   
+height: 0;   
+}   

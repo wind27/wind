@@ -1,0 +1,84 @@
+/** 第二种题目模板 带难度等标签信息 */
+.qbody dd img, .qcontent dd img{max-width:650px;}
+/** 单题/组合题主题样式 background:#F7F7F7; */
+.question2{background:#FFFFFF;}
+.question2 a{color:#000000;text-decoration: none;text-align:center;}
+.question2>.qtitle{height:25px;line-height:25px;background-color:#E0EBF8;cursor:pointer;}
+.question2>.qtitle a {height:25px;line-height:25px;cursor:pointer;}
+.question2.active>.qtitle{background-color:#FFE7C8;}
+
+.question2 .qtitle .qindex{width:25px;height:25px;line-height:25px;background-color:#A1C55E;font-size:12px;color:#FFFFFF;font-weight:bold;text-align:center;float:left;}
+
+.question2 span.btn18{display: inline-block;height: 18px;line-height: 18px;text-align: center;width: 30px;cursor:pointer;}
+.question2 span.btn18.active{ background: none repeat scroll 0 0 #70B4E0;color:#ffffff}
+
+.qtitle a:hover ,.subquestion2 a:hover ,.question2.active>div>span>a.edit {color:#FFFFFF;background:#70B4E0;}
+
+
+.question2.active .question-option{
+	display:block;
+}
+
+
+.question2 .question-option{display:none;}
+.question2 .qtitle .qtitle-info{width:760px;float:left;padding-left:5px;}
+.question2 .qtitle .qtitle-info dt{display:inline-block;}
+.question2 .qtitle .qtitle-info dd{display:inline-block;margin-right:5px;}
+.question2 .qdiff{display:inline-block;width:60px;height:7px;background:#FFFFFF;}
+.question2 .qdiff span{display:inline-block;width:15px;height:7px;float:left;}
+.question2 .qdiff>span:nth-child(1){background:#98D0F4;}
+.question2 .qdiff>span:nth-child(2){background:#52AFEF;}
+.question2 .qdiff>span:nth-child(3){background:#0181DD;}
+.question2 .qdiff>span:nth-child(4){background:blue;}
+.question2 .qstatus{float:right;width:290px;text-align:right;}
+.question2 .qstatus span{margin-left:5px;}
+
+.question2 .qref{line-height:20px;padding-left:5px;background:#F3F3F3;margin-bottom:8px;}
+.question2 .qref dt{display:inline-block;}
+.question2 .qref dd{margin-right:5px;text-align:left;display:inline-block;}
+
+/** 组合体 子题样式 */
+.subquestion2{background:#FFFFFF;width:98%;margin:1%;border:1px solid #ECECEC;}
+.subquestion2 a {height:20px;line-height:20px;}
+.subquestion2>.qtitle{height:20px;line-height:20px;background-color:#F5F5F5;margin-bottom:8px;cursor:pointer;}
+.subquestion2>.qtitle a {height:20px;line-height:20px;}
+.subquestion2.active>.qtitle{background-color:#FFE7C8;}
+.subquestion2 .qtitle .subqindex{float: left;padding-left:5px;}
+
+.subquestion2 .qtitle .qtitle-info{width:720px;float:left;padding-left:5px;}
+.subquestion2 .qtitle .qtitle-info dt{display:inline-block;}
+.subquestion2 .qtitle .qtitle-info dd{display:inline-block;margin-right:5px;}
+
+.question2 .qbody{background : #FFFFFF;font-size:0;width:100%;}
+.question2 .qbody dd{width:98%;padding-left:2%;}
+
+/** 公共样式 */
+.question2 .qcontent{background : #FFFFFF;font-size:0;width:100%;min-height:25px;border-top:none;display:none;}
+.question2 .qcontent>dt{
+	text-align: left;
+	font-weight:normal;
+	width:5%;
+	padding-left:2%;
+	display:inline-block;
+	line-height:25px;
+	font-size:12px;
+	float:left;
+	color: #999999;
+}
+.question2 .qcontent>dd{
+	display:inline-block;
+	width:93%;
+	min-height:0;
+	line-height:25px;
+	background:#FFFFFF;
+	padding-left:0;
+	text-align:left;
+	font-size:12px;
+}
+.question2 .qcontent>dd>img{
+	max-width:650px;
+	border:none;
+}
+
+/** override */
+.bg-error{background-color:red;}

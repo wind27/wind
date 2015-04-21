@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE taglib PUBLIC "-//Sun Microsystems, Inc.//DTD JSP Tag Library 1.2//EN"
+                        "http://java.sun.com/dtd/web-jsptaglibrary_1_2.dtd">
+<taglib>
+	<tlib-version>1.0</tlib-version>
+	<jsp-version>1.2</jsp-version>
+	<short-name>security</short-name>
+	<uri>http://koo-learn.com</uri>
+ 
+	<tag>
+		<name>security</name>
+		<tag-class>com.noriental.security.jstlTag.AuthorizeTag</tag-class>
+		<body-content>jsp</body-content>
+		<attribute>
+			<name>funcUri</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+			<type>java.lang.String</type>
+			<description>功能权限uri</description>
+		</attribute>
+		
+		<attribute>
+			<name>method</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+			<type>java.lang.String</type>
+			<description>访问的方法</description>
+		</attribute>
+		
+		<attribute>
+			<name>request</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+			<type>javax.servlet.http.HttpServletRequest</type>
+			<description>功能权限session</description>
+		</attribute>
+		<attribute>
+			<name>userUtils</name>
+			<required>false</required>
+			<rtexprvalue>false</rtexprvalue>
+			<type>com.noriental.security.utils.UserUtils</type>
+			<description>功能权限session</description>
+		</attribute>
+	</tag>
+	<tag>
+		<name>data_security</name>
+		<tag-class>com.noriental.security.jstlTag.DataAuthorizeTag</tag-class>
+		<body-content>jsp</body-content>
+		<attribute>
+			<name>gradeId</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+			<type>java.lang.Integer</type>
+			<description>年级</description>
+		</attribute>
+		
+		<attribute>
+			<name>subjectId</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+			<type>java.lang.Integer</type>
+			<description>学科</description>
+		</attribute>
+		
+		<attribute>
+			<name>session</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+			<type>javax.servlet.http.HttpServletRequest</type>
+			<description>功能权限session</description>
+		</attribute>
+	</tag>
+</taglib>
+

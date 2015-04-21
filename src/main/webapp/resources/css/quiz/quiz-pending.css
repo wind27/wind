@@ -1,0 +1,67 @@
+.paper-list{
+	
+}
+
+.paper-desc{
+	padding: 0 10px;border-bottom:1px solid #E6E6E6; 
+}
+
+.paper-desc label{
+	font-weight:normal;
+	display:inline-block;
+}
+
+.paper-desc a{
+	text-decoration:none;
+	color:#296FAD;
+}
+
+
+
+.paper-desc-up{
+	
+}
+
+.paper-desc-down{
+	height:40px;font-size:12px;color:#999999;padding: 5px 0 0 0;
+}
+
+.paper-desc-name{
+	float:left;width:530px;padding: 15px 0 5px 0;table-layout: fixed;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+
+.paper-desc-name a {
+	color:#000000;
+}
+
+.paper-desc-name a:hover {
+	color:#296FAD;
+}
+
+.paper-desc-option{
+	width:240px;padding: 5px 0 15px 0;
+	float:right;
+}
+
+.paper-desc-option label{
+	text-align:right;
+}
+
+.paper-desc-upload{
+	float:left;width:590px;
+}
+
+.paper-desc-status{
+	float:right;width:180px;
+}
+
+
+.paper-desc:nth-child(odd){
+	background:#F0F0F0;
+}
+
+.paper-desc:nth-child(even){
+	background:#FFFFFF;
+}

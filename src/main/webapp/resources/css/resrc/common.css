@@ -1,0 +1,243 @@
+/** fixed **/
+.mainTitle {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.list {
+    height: auto;
+    margin: 0;
+}
+
+.formTab {
+    margin: 15px 0 0 0;
+}
+
+/** utils **/
+.inline {
+    display: inline-block;
+}
+
+.fRight {
+    float: right;
+}
+
+.fLeft {
+    float: left;
+}
+
+.tCenter {
+    text-align: center;
+}
+
+.fNo {
+    float: none!important;
+ }
+
+.hidden {
+    display: none;
+}
+
+.ellipsis {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.relative {
+    position: relative;
+}
+
+/** common **/
+body {
+    font-size: 12px;
+}
+
+a, a:active, a:link {
+    color: #666;
+}
+
+/** content **/
+input.searchIpt {
+    height: 25px;
+}
+
+#roleSel {
+    height: 25px;
+}
+
+a.searchBtn {
+    height: 25px;
+    line-height: 25px;
+    width: 40px;
+    text-align: center;
+    padding: 0 5px;
+    display: inline-block;
+    background-color: #61a2d8;
+    color: #fff;
+    vertical-align: top;
+}
+
+.badge {
+    position: absolute;
+    top: -9px;
+    right: -15px;
+    min-width: 10px;
+    padding: 3px 7px;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    background-color: #ff0000;
+    border-radius: 10px;
+}
+
+ul.itemList {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    height: 40px;
+    font-size: 1.03rem;
+}
+
+ul.itemList li {
+    float: left;
+    border: 1px solid #999;
+    border-bottom: 0;
+    text-align: center;
+    width: 90px;
+    padding: 0;
+    margin: 12px 8px 0;
+    -webkit-border-top-left-radius: 4px;
+    -webkit-border-top-right-radius: 4px;
+    position: relative;
+}
+
+ul.itemList li.current {
+    background-color: #61a2d8;
+}
+
+ul.itemList li a {
+    display: block;
+    padding: 3px 10px;
+}
+
+ul.itemList li.current a {
+    color: #fff;
+}
+
+/** 评论list **/
+.bg {
+    background-color: #fafbfc;
+}
+
+ul.commentList {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+}
+
+ul.commentList li {
+    border-top: 2px solid #e4e4e4;
+}
+
+.cl_box {
+    overflow: hidden;
+    position: relative;
+    font-size: 0.85rem;
+}
+
+.cl_box .cl_left {
+    float: left;
+    width: 120px;
+    height: 150px;
+    text-align: center;
+    position: relative;
+}
+
+.cl_box .cl_left span {
+    display: block;
+    position: relative;
+    top: 35%;
+    transform: translateY(-40%);
+}
+
+.cl_box .cl_right {
+    float: left;
+    width: 878px;
+    height: 150px;
+}
+
+.cl_box .cl_right .cl_header {
+    height: 30px;
+    line-height: 30px;
+    padding: 0 8px;
+}
+
+.cl_box .cl_right .cl_header a {
+    float: right;
+    margin: 0 3px;
+    color: #61a2d8;
+}
+
+.cl_box .cl_right .cl_header a:hover {
+    font-weight: bold;
+}
+
+a.pass, a.remove {
+    border: 1px solid #666;
+    padding: 0 8px;
+    margin-top: 2px!important;
+    color: #666!important;
+    line-height: 22px;
+    background-color: #e4e4e4;
+}
+
+a.pass:hover, a.remove:hover {
+    font-weight: normal!important;
+}
+
+.cl_box .cl_right .cl_content {
+    height: 80px;
+    padding: 10px 15px;
+}
+
+.cl_box .cl_right .cl_footer {
+    height: 20px;
+    text-align: right;
+}
+
+.cl_box .cl_right .cl_footer span {
+    margin: 0 5px;
+}
+
+.sort {
+    line-height: 25px;
+    margin-right: 15px;
+}
+
+.sort a {
+    margin: 0 3px;
+    color: #aaaaaa;
+    font-size: .9rem;
+}
+
+.sort a.selected {
+    color: #61a2d8;
+}
+
+.sort span {
+    margin: 0 12px;
+}
+
+.sort a.up:after {
+    content: "↑";
+}
+
+.sort a.down:after {
+    content: "↓";
+}

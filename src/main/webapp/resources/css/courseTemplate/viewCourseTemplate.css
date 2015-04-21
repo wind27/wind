@@ -1,0 +1,82 @@
+.maincontent {
+            width: 900px;
+            margin: 0 auto;
+            border: solid 1px black;
+            font-size: 12px;
+        }
+
+        .maincontent .title {
+            font-weight: bold;
+            font-size: 14px;
+            padding: 10px;
+        }
+
+        .maincontent .content {
+            padding: 10px;
+        }
+
+        .maincontent .chooose select, .maincontent .chooose input[type='text'] {
+            width: 100px;
+        }
+
+        .maintable {
+            width: 100%;
+            margin-top: 50px;
+        }
+
+        .maintable th {
+            font-size: 15px;
+        }
+
+        .maintable td, .maintable th {
+            padding: 10px;
+        }
+
+        .chapter td {
+            font-size: 13px;
+            font-weight: bold;
+            background-color: lightgray;
+        }
+
+        .section td {
+            padding-left: 50px;
+        }
+        
+.chapter .cimg
+{
+	display: none;
+}
+
+.section .simg
+{
+	display: none;
+}
+
+body {
+	font-size: 62.5%;
+	font-family: "Trebuchet MS", "Arial", "Helvetica", "Verdana", "sans-serif";
+}
+
+table {
+	font-size: 1em;
+}
+
+.menuWapper {
+	width: 160px;
+	height: 75px;
+	display: none;
+	position: absolute
+}
+
+.line {
+	float: inherit;
+    height: 10px;
+    left: 0;
+    top: 8px;
+    border-bottom:1px solid #CCCCCC;
+}
+
+.paginator{
+	margin-left: 400px;
+}
+

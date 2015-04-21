@@ -1,0 +1,11 @@
+.event-list tr{
+	height:50px;
+}
+
+.event-list td,th{
+	padding:0 5px;
+}
+
+.event-list .list-head{
+	background:gray;
+}

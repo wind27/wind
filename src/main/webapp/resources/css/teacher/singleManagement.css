@@ -1,0 +1,60 @@
+.cmContent {
+	background-color:white;
+	width: 800px;
+}
+
+.category-detail-title{
+	float: inherit;
+	height: 30px;
+	border-bottom:1px solid #CCCCCC;
+}
+
+.title-long{
+	width: 320px;float: left;margin-top:5px;
+}
+
+.title-short{
+	width: 160px;float: left;margin-top:5px;
+}
+
+.category-detail-info{
+	float: inherit;
+	height:32px;
+	margin-bottom:1px;
+	border-bottom:1px solid #CCCCCC;
+}
+
+.category-detail-opertation{
+	float: inherit;
+	height:40px;
+	border-bottom:1px solid #CCCCCC;
+}
+
+.category-input{
+	width:320px;float: left;height: 25px;margin-top:2px;
+}
+
+.up-category{
+	width:160px;float: left;height: 25px;margin-top:5px;
+}
+
+.down-category{
+	width:160px;float: left;height: 25px;margin-top:5px;
+}
+
+.delete-category{
+	width:160px;float: left;height: 25px;margin-top:5px;
+}
+
+span.btn-bar {
+	font-size: 12px;
+    font-weight: normal;
+    line-height: 30px;
+    width: 60px;
+    height:30px;
+    margin: 5px;
+    border:1px solid #CCCCCC;
+    text-align : center;
+    cursor:pointer;
+    float: left;
+}

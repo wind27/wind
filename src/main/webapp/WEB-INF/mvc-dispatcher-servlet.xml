@@ -1,0 +1,108 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd">
+
+	<context:property-placeholder location="classpath*:*.properties"
+        ignore-unresolvable="true" />
+
+    <mvc:annotation-driven>
+        <mvc:async-support default-timeout="30000"/>
+        <mvc:message-converters register-defaults="true">
+			<bean class="org.springframework.http.converter.StringHttpMessageConverter">
+		      	<constructor-arg value="UTF-8" />
+			</bean>
+		</mvc:message-converters>
+    </mvc:annotation-driven>
+
+    <context:component-scan base-package="com.noriental.*.controller"/>
+	
+	<!-- <bean class="com.noriental.drawboard.shared.BoardProperty" /> -->
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="prefix" value="/WEB-INF/pages/"/>
+        <property name="suffix" value=".jsp"/>
+        <property name="exposedContextBeanNames">
+            <list>
+                <value>properties</value>
+            </list>
+        </property>
+    </bean>
+
+    <bean id="multipartResolver"
+          class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+        <property name="defaultEncoding">
+            <value>UTF-8</value>
+        </property>
+    </bean>
+
+    <bean class="org.springframework.aop.framework.autoproxy.DefaultAdvisorAutoProxyCreator"/>
+
+    <mvc:interceptors>
+        <bean id="webContentInterceptor"
+              class="org.springframework.web.servlet.mvc.WebContentInterceptor">
+            <property name="cacheSeconds" value="0"/>
+            <property name="useExpiresHeader" value="true"/>
+            <property name="useCacheControlHeader" value="true"/>
+            <property name="useCacheControlNoStore" value="true"/>
+        </bean>
+        <mvc:interceptor>
+            <mvc:mapping path="/**" />
+            <mvc:exclude-mapping path="/resources/**"/>
+            <mvc:exclude-mapping path="/static/**"/>
+            <mvc:exclude-mapping path="/ueditor/**"/>
+            <mvc:exclude-mapping path="/platform/data/**"/>
+            <bean class="com.noriental.security.interceptor.AuthorizeInterceptor">
+                <property name="whiteList">
+                    <list>                       
+                        <value>/</value>
+                        <value>/login/</value>
+                        <value>/logout/</value>
+                        <value>/index/</value>
+                        <value>/captchahtm/</value>
+                        <value>/portal/error/</value>
+                        <value>/portal/index/</value>
+                        <value>/data/\w+</value>
+                        <value>/user/checkPasswd/</value>
+                        <value>/user/doUpdatePwd/</value>
+                        <value>/ueditor/.*</value>
+                    </list>
+                </property>
+                 
+            </bean>
+        </mvc:interceptor>
+ 
+    </mvc:interceptors>
+    <bean id="mappingJacksonHttpMessageConverter" class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter"></bean>
+    
+    <mvc:annotation-driven>
+    	<mvc:message-converters>
+    		<bean name="stringConverter" class="org.springframework.http.converter.StringHttpMessageConverter">
+    			<property name="supportedMediaTypes">
+    				<list>
+    					<value>application/json;charset=UTF-8</value>
+    					<value>multipart/form-data;charset=UTF-8</value>
+    				</list>
+    			</property>
+    		</bean>
+    	</mvc:message-converters>
+    	
+    </mvc:annotation-driven>
+    <!-- 启动Spring MVC的注解功能，完成请求和注解POJO的映射 -->
+    <bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter">
+    	<property name="messageConverters">
+    		<list>
+    			<ref bean="mappingJacksonHttpMessageConverter"/>
+    		</list>
+    	</property>
+    </bean> 
+    
+    <mvc:resources location="/WEB-INF/pages/" mapping="/**/*.xhtml"/>
+    <mvc:resources mapping="/static/css/images/**" location="/resources/img/"/>
+    <mvc:resources mapping="/static/images/**" location="/resources/img/" cache-period="31556926"/>
+    <mvc:resources mapping="/static/**" location="/resources/" cache-period="31556926"/>
+    <mvc:resources mapping="/resources/**" location="/resources/" cache-period="31556926"/>
+    <mvc:resources mapping="/ueditor/**" location="/ueditor/"/>
+</beans>
