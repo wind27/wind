@@ -14,11 +14,11 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import com.noriental.global.dict.AppType.LoginType;
+import com.noriental.common.Constants.LoginType;
+import com.noriental.security.domain.Permission;
 import com.noriental.security.domain.User;
-import com.noriental.security.usermanage.domain.Permission;
-import com.noriental.security.utils.PermissionUtils;
-import com.noriental.security.utils.UserUtils;
+import com.noriental.utils.PermissionUtils;
+import com.noriental.utils.UserUtils;
 
 @Controller
 @RequestMapping("/")

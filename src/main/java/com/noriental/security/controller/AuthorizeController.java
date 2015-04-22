@@ -9,7 +9,6 @@ import java.util.Map;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.apache.zookeeper.ZooDefs.Perms;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,15 +20,15 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.github.miemiedev.mybatis.paginator.domain.PageBounds;
-import com.noriental.global.Constants.PagerSize;
-import com.noriental.security.usermanage.domain.Domain;
-import com.noriental.security.usermanage.domain.Function;
-import com.noriental.security.usermanage.domain.Group;
-import com.noriental.security.usermanage.domain.Permission;
-import com.noriental.security.usermanage.service.FunctionService;
-import com.noriental.security.usermanage.service.GroupService;
-import com.noriental.security.usermanage.service.PermissionService;
-import com.noriental.security.utils.PermissionUtils;
+import com.noriental.common.Constants.PagerSize;
+import com.noriental.security.domain.Domain;
+import com.noriental.security.domain.Function;
+import com.noriental.security.domain.Group;
+import com.noriental.security.domain.Permission;
+import com.noriental.security.service.FunctionService;
+import com.noriental.security.service.GroupService;
+import com.noriental.security.service.PermissionService;
+import com.noriental.utils.PermissionUtils;
 
 @Controller
 @RequestMapping("/auth")

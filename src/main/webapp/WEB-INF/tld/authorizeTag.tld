@@ -9,7 +9,7 @@
  
 	<tag>
 		<name>security</name>
-		<tag-class>com.noriental.security.jstlTag.AuthorizeTag</tag-class>
+		<tag-class>com.noriental.utils.AuthorizeTag</tag-class>
 		<body-content>jsp</body-content>
 		<attribute>
 			<name>funcUri</name>
@@ -44,7 +44,7 @@
 	</tag>
 	<tag>
 		<name>data_security</name>
-		<tag-class>com.noriental.security.jstlTag.DataAuthorizeTag</tag-class>
+		<tag-class>com.noriental.utils.DataAuthorizeTag</tag-class>
 		<body-content>jsp</body-content>
 		<attribute>
 			<name>gradeId</name>

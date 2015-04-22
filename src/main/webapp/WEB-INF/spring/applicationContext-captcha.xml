@@ -27,7 +27,7 @@
 	</bean>
 
 <!-- 	<bean id="CaptchaFactory" class="com.octo.captcha.image.gimpy.GimpyFactory"> -->
-	<bean id="CaptchaFactory" class="com.noriental.security.utils.GimpyFactory">
+	<bean id="CaptchaFactory" class="com.noriental.utils.GimpyFactory">
 		<constructor-arg>
 			<ref bean="wordgen" />
 		</constructor-arg>

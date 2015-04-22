@@ -20,17 +20,15 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
 
-import com.noriental.framework.util.StringUtil;
-import com.noriental.global.dict.AppType.LoginType;
+import com.noriental.common.Constants.LoginType;
+import com.noriental.security.domain.Function;
+import com.noriental.security.domain.Permission;
 import com.noriental.security.domain.User;
-import com.noriental.security.usermanage.domain.Admin;
-import com.noriental.security.usermanage.domain.Function;
-import com.noriental.security.usermanage.domain.Permission;
-import com.noriental.security.usermanage.service.AdminService;
-import com.noriental.security.usermanage.service.FunctionService;
-import com.noriental.security.usermanage.service.PermissionService;
-import com.noriental.security.utils.PermissionUtils;
-import com.noriental.security.utils.UserUtils;
+import com.noriental.security.service.FunctionService;
+import com.noriental.security.service.PermissionService;
+import com.noriental.utils.PermissionUtils;
+import com.noriental.utils.StringUtil;
+import com.noriental.utils.UserUtils;
 
 /**
  * 拦截器
@@ -59,7 +57,7 @@ public class AuthorizeInterceptor extends HandlerInterceptorAdapter {
 	public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
 		// 获得访问URI, 并格式化URI
 		String uri = request.getRequestURI();
-		uri = StringUtil.formatURI(uri, request.getContextPath());
+		uri = formatURI(uri, request.getContextPath());
 		
 		//判断是否允许访问
 		User currentUser = userUtils.getUser(LoginType.admin, request);
@@ -246,5 +244,24 @@ public class AuthorizeInterceptor extends HandlerInterceptorAdapter {
             funcIdList.add(function.getId());
         }
         return funcIdList;
+    }
+    public static String formatURI(String uri, String contextPath) {
+        // 去应用名
+        uri = uri.substring(contextPath.length());
+
+        // 去参数
+        if (uri.indexOf("?") > -1) {
+            String[] temp = uri.split("?");
+            if (temp != null && temp.length > 1) {
+                uri = temp[0];
+            }
+        }
+
+        // 结尾补/
+        if (!uri.endsWith("/")) {
+            uri += "/";
+        }
+
+        return uri;
     }
 }

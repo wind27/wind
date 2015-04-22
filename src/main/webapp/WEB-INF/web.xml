@@ -3,7 +3,7 @@
          xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
     http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
 
-    <display-name>portal_admin</display-name>
+    <display-name>wind_web</display-name>
 
     <context-param>
         <param-name>contextConfigLocation</param-name>
@@ -103,7 +103,7 @@
 	
 	<filter>  
 	    <filter-name>RequestWrappingFilter</filter-name>  
-	    <filter-class>com.noriental.framework.util.RequestWrappingFilter</filter-class>
+	    <filter-class>com.noriental.utils.RequestWrappingFilter</filter-class>
         <async-supported>true</async-supported>
 	</filter>  
 	<filter-mapping>  

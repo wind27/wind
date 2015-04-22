@@ -7,7 +7,6 @@ import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
-import javax.print.attribute.standard.PageRanges;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
@@ -22,24 +21,24 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.github.miemiedev.mybatis.paginator.domain.PageBounds;
-import com.noriental.global.Constants.PagerSize;
-import com.noriental.global.dict.AppType.LoginType;
+import com.noriental.common.Constants.LoginType;
+import com.noriental.common.Constants.PagerSize;
+import com.noriental.security.domain.Admin;
+import com.noriental.security.domain.Domain;
+import com.noriental.security.domain.Function;
+import com.noriental.security.domain.Group;
+import com.noriental.security.domain.GroupLinkRole;
+import com.noriental.security.domain.Permission;
+import com.noriental.security.domain.Role;
+import com.noriental.security.domain.RoleVo;
 import com.noriental.security.domain.User;
-import com.noriental.security.usermanage.domain.Admin;
-import com.noriental.security.usermanage.domain.Domain;
-import com.noriental.security.usermanage.domain.Function;
-import com.noriental.security.usermanage.domain.Group;
-import com.noriental.security.usermanage.domain.GroupLinkRole;
-import com.noriental.security.usermanage.domain.Permission;
-import com.noriental.security.usermanage.domain.Role;
-import com.noriental.security.usermanage.domain.RoleVo;
-import com.noriental.security.usermanage.service.FunctionService;
-import com.noriental.security.usermanage.service.GroupLinkRoleService;
-import com.noriental.security.usermanage.service.GroupService;
-import com.noriental.security.usermanage.service.PermissionService;
-import com.noriental.security.usermanage.service.RoleService;
-import com.noriental.security.utils.PermissionUtils;
-import com.noriental.security.utils.UserUtils;
+import com.noriental.security.service.FunctionService;
+import com.noriental.security.service.GroupLinkRoleService;
+import com.noriental.security.service.GroupService;
+import com.noriental.security.service.PermissionService;
+import com.noriental.security.service.RoleService;
+import com.noriental.utils.PermissionUtils;
+import com.noriental.utils.UserUtils;
 import com.sumory.mybatis.pagination.result.PageResult;
 
 

@@ -13,5 +13,6 @@
 	<dubbo:registry protocol="dubbo" address="zookeeper://${server.zk.url}"  file="${server.dubbo.registry.file}"/>
     <context:property-placeholder location="classpath*:*.properties" ignore-unresolvable="true" />
 	<context:annotation-config/>
-    <context:component-scan base-package="com.noriental"/>
+    <context:component-scan base-package="com.noriental.security.controller"/>
+    <context:component-scan base-package="com.noriental.utils"/>
 </beans>

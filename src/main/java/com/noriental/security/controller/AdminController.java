@@ -24,22 +24,22 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.github.miemiedev.mybatis.paginator.domain.PageBounds;
-import com.noriental.framework.util.Encrypt;
-import com.noriental.global.Constants;
-import com.noriental.global.Constants.PagerSize;
-import com.noriental.global.dict.AppType.LoginType;
+import com.noriental.common.Constants;
+import com.noriental.common.Constants.LoginType;
+import com.noriental.common.Constants.PagerSize;
+import com.noriental.security.domain.Admin;
+import com.noriental.security.domain.AdminVo;
+import com.noriental.security.domain.Group;
+import com.noriental.security.domain.TStage;
+import com.noriental.security.domain.TSubject;
 import com.noriental.security.domain.User;
-import com.noriental.security.usermanage.domain.Admin;
-import com.noriental.security.usermanage.domain.AdminVo;
-import com.noriental.security.usermanage.domain.Group;
-import com.noriental.security.usermanage.domain.TStage;
-import com.noriental.security.usermanage.domain.TSubject;
-import com.noriental.security.usermanage.domain.UserLinkSubject;
-import com.noriental.security.usermanage.service.AdminService;
-import com.noriental.security.usermanage.service.GroupService;
-import com.noriental.security.usermanage.service.TSubjectService;
-import com.noriental.security.usermanage.service.UserLinkSubjectService;
-import com.noriental.security.utils.UserUtils;
+import com.noriental.security.domain.UserLinkSubject;
+import com.noriental.security.service.AdminService;
+import com.noriental.security.service.GroupService;
+import com.noriental.security.service.TSubjectService;
+import com.noriental.security.service.UserLinkSubjectService;
+import com.noriental.utils.Encrypt;
+import com.noriental.utils.UserUtils;
 import com.sumory.mybatis.pagination.result.PageResult;
 
 @Controller

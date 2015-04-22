@@ -4,58 +4,56 @@
        xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
         http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
-        
-	<!-- security service -->
 	<dubbo:reference
 		id="permissionService"
-        interface="com.noriental.security.usermanage.service.PermissionService"
+        interface="com.noriental.security.service.PermissionService"
         check="false" timeout="5000" version="${service.dubbo.security.version}"/>
     <dubbo:reference
     	id="functionService"
-		interface="com.noriental.security.usermanage.service.FunctionService"
+		interface="com.noriental.security.service.FunctionService"
 		check="false" timeout="5000" version="${service.dubbo.security.version}"/>
     <dubbo:reference
     	id="groupService"
-		interface="com.noriental.security.usermanage.service.GroupService"
+		interface="com.noriental.security.service.GroupService"
 		check="false" timeout="5000" version="${service.dubbo.security.version}"/>
     <dubbo:reference
     	id="groupLinkUserService"
-		interface="com.noriental.security.usermanage.service.GroupLinkUserService" 
+		interface="com.noriental.security.service.GroupLinkUserService" 
 		check="false" timeout="5000" version="${service.dubbo.security.version}"/>
     <dubbo:reference
     	id="groupLinkRoleService"
-        interface="com.noriental.security.usermanage.service.GroupLinkRoleService"
+        interface="com.noriental.security.service.GroupLinkRoleService"
         check="false" timeout="5000" version="${service.dubbo.security.version}"/>
     <dubbo:reference
     	id="adminService"
-        interface="com.noriental.security.usermanage.service.AdminService"
+        interface="com.noriental.security.service.AdminService"
         check="false" timeout="5000" version="${service.dubbo.security.version}"/>
     <dubbo:reference
     	id="userLinkSubjectService"
-        interface="com.noriental.security.usermanage.service.UserLinkSubjectService"
+        interface="com.noriental.security.service.UserLinkSubjectService"
         check="false" timeout="5000" version="${service.dubbo.security.version}"/>
     <dubbo:reference
     	id="roleService"
-        interface="com.noriental.security.usermanage.service.RoleService"
+        interface="com.noriental.security.service.RoleService"
         check="false" timeout="5000" version="${service.dubbo.security.version}"/>
     <dubbo:reference
     	id="roleLinkFuncService"
-        interface="com.noriental.security.usermanage.service.RoleLinkFuncService"
+        interface="com.noriental.security.service.RoleLinkFuncService"
         check="false" timeout="5000" version="${service.dubbo.security.version}"/>
     <dubbo:reference
     	id="tGradeService"
-        interface="com.noriental.security.usermanage.service.TGradeService"
+        interface="com.noriental.security.service.TGradeService"
         check="false" timeout="5000" version="${service.dubbo.security.version}"/>
     <dubbo:reference
     	id="tStageService"
-        interface="com.noriental.security.usermanage.service.TStageService"
+        interface="com.noriental.security.service.TStageService"
         check="false" timeout="5000" version="${service.dubbo.security.version}"/>
     <dubbo:reference
     	id="tSubjectService"
-        interface="com.noriental.security.usermanage.service.TSubjectService"
+        interface="com.noriental.security.service.TSubjectService"
         check="false" timeout="5000" version="${service.dubbo.security.version}"/>
 	<dubbo:reference 
 		id="domainService"
-		interface="com.noriental.security.usermanage.service.DomainService" 
+		interface="com.noriental.security.service.DomainService" 
 		check="false" timeout="5000" version="${service.dubbo.security.version}"/> 
 </beans>

@@ -20,5 +20,5 @@
 		<constructor-arg index="2" value="${server.redis.port}" />
 	</bean>
 	
-	<bean id="redisUtil" class="com.noriental.framework.util.RedisUtil"></bean>
+	<bean id="redisUtil" class="com.noriental.utils.RedisUtil"></bean>
 </beans>
