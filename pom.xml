@@ -444,6 +444,11 @@
 			<artifactId>sdk</artifactId>
 			<version>[6.1.7, 6.999]</version>
 		</dependency>
+		<dependency>
+	        <groupId>com.alibaba</groupId>
+	        <artifactId>druid</artifactId>
+	        <version>1.0.13</version>
+	    </dependency>
 	</dependencies>
 
 	<build>
