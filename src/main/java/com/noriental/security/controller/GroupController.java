@@ -30,7 +30,6 @@ import com.noriental.security.domain.GroupLinkUser;
 import com.noriental.security.domain.GroupVo;
 import com.noriental.security.domain.Permission;
 import com.noriental.security.domain.Role;
-import com.noriental.security.domain.User;
 import com.noriental.security.service.AdminService;
 import com.noriental.security.service.FunctionService;
 import com.noriental.security.service.GroupLinkRoleService;
@@ -38,8 +37,9 @@ import com.noriental.security.service.GroupLinkUserService;
 import com.noriental.security.service.GroupService;
 import com.noriental.security.service.PermissionService;
 import com.noriental.security.service.RoleService;
+import com.noriental.utils.LoginUserInfo;
+import com.noriental.utils.LoginUserInfoUtils;
 import com.noriental.utils.PermissionUtils;
-import com.noriental.utils.UserUtils;
 import com.sumory.mybatis.pagination.result.PageResult;
 
 
@@ -64,15 +64,16 @@ public class GroupController {
 	private GroupLinkRoleService groupLinkRoleService;
 	
 	@Autowired
-	private UserUtils userUtils;
-	@Autowired
 	private PermissionUtils permissionUtils;
 	
 	@Autowired
 	private AdminService adminService;
 	
 	@Autowired
-	PermissionService permissionService;	
+	private PermissionService permissionService;	
+	
+	@Autowired
+    private LoginUserInfoUtils loginUserInfoUtils;
 	
 	/**
      * 
@@ -298,7 +299,7 @@ public class GroupController {
         		@RequestParam(value="limit", required = false) int limit,
         		HttpServletRequest request) {
     	boolean isSuper = false;
-    	User currentUser = userUtils.getUser(LoginType.admin, request);
+    	LoginUserInfo currentUser = loginUserInfoUtils.getUser(LoginType.admin, request);
     	Group group = groupService.findByUserIdAndUserType(currentUser.getId(), Admin.USER_TYPE).get(0);
     	
     	Map<String, Object> params = new HashMap<String, Object>();

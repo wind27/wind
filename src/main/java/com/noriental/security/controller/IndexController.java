@@ -16,15 +16,15 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.noriental.common.Constants.LoginType;
 import com.noriental.security.domain.Permission;
-import com.noriental.security.domain.User;
+import com.noriental.utils.LoginUserInfo;
+import com.noriental.utils.LoginUserInfoUtils;
 import com.noriental.utils.PermissionUtils;
-import com.noriental.utils.UserUtils;
 
 @Controller
 @RequestMapping("/")
 public class IndexController {
     @Autowired
-    private UserUtils userUtils;
+    private LoginUserInfoUtils loginUserInfoUtils;
     @Autowired
     private PermissionUtils permissionUtils;
 	/**
@@ -36,7 +36,7 @@ public class IndexController {
      */
     @RequestMapping(method = RequestMethod.GET)
     public String root(HttpServletRequest request) {
-        User currentUser = userUtils.getUser(LoginType.admin, request);
+        LoginUserInfo currentUser = loginUserInfoUtils.getUser(LoginType.admin, request);
         if (currentUser == null) {
             return "/login";
         }
@@ -53,7 +53,7 @@ public class IndexController {
     @RequestMapping("/index")
     public String index(HttpServletRequest request, HttpServletResponse response)
             throws IOException {
-        User currentUser = userUtils.getUser(LoginType.admin, request);
+        LoginUserInfo currentUser = loginUserInfoUtils.getUser(LoginType.admin, request);
         if (currentUser == null) {
             return "/login";
         }
@@ -72,7 +72,7 @@ public class IndexController {
      */
     @RequestMapping(value = "/login", method = RequestMethod.GET)
     public String index(HttpServletRequest request) {
-        User currentUser = userUtils.getUser(LoginType.admin, request);
+        LoginUserInfo currentUser = loginUserInfoUtils.getUser(LoginType.admin, request);
         if (currentUser == null) {
             return "/login";
         }
@@ -106,5 +106,11 @@ public class IndexController {
         }
         return permissionList;
   	}
+	//-------------------------------------------------------------------------------------------------------
+	@RequestMapping("/websocket")
+    public String websocket(HttpServletRequest request, HttpServletResponse response)
+            throws IOException {
+        return "/websocket";
+    } 
 }
 

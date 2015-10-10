@@ -31,14 +31,14 @@ import com.noriental.security.domain.GroupLinkRole;
 import com.noriental.security.domain.Permission;
 import com.noriental.security.domain.Role;
 import com.noriental.security.domain.RoleVo;
-import com.noriental.security.domain.User;
 import com.noriental.security.service.FunctionService;
 import com.noriental.security.service.GroupLinkRoleService;
 import com.noriental.security.service.GroupService;
 import com.noriental.security.service.PermissionService;
 import com.noriental.security.service.RoleService;
+import com.noriental.utils.LoginUserInfo;
+import com.noriental.utils.LoginUserInfoUtils;
 import com.noriental.utils.PermissionUtils;
-import com.noriental.utils.UserUtils;
 import com.sumory.mybatis.pagination.result.PageResult;
 
 
@@ -56,8 +56,8 @@ public class RoleController {
 	private GroupService groupService;
 	@Autowired
 	private PermissionService permissionService;
-	@Autowired
-	private UserUtils userUtils;
+    @Autowired
+    private LoginUserInfoUtils loginUserInfoUtils;
 	@Autowired
     private PermissionUtils permissionUtils;
 	/**
@@ -281,7 +281,7 @@ public class RoleController {
     	//存储二级权限信息
     	Map<Function, List<Function>> secondFuncMap = new LinkedHashMap<Function, List<Function>>();
     	Map<String, Object> params = new HashMap<String, Object>();
-    	params.put("parentCode", 4);
+    	params.put("parentCode", 1);
     	params.put("stats", Function.FUNCTION_STATS_ENABLE);
     	params.put("domain", Function.FUNCTION_DOMAIN_ADMIN);
     	params.put("userType", 1);
@@ -338,7 +338,7 @@ public class RoleController {
 			@RequestParam(value="start", required = false) int start,
 			@RequestParam(value="limit", required = false) int limit,
 			HttpServletRequest request) {
-    	User currentUser = userUtils.getUser(LoginType.admin, request);
+    	LoginUserInfo currentUser = loginUserInfoUtils.getUser(LoginType.admin, request);
 		Group group = groupService.findByUserIdAndUserType(currentUser.getId(), Admin.USER_TYPE).get(0);
 	
 		//分页查询

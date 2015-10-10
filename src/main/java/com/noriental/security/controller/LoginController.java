@@ -30,7 +30,6 @@ import com.noriental.security.domain.Domain;
 import com.noriental.security.domain.Function;
 import com.noriental.security.domain.GroupLinkUser;
 import com.noriental.security.domain.Permission;
-import com.noriental.security.domain.User;
 import com.noriental.security.service.AdminService;
 import com.noriental.security.service.FunctionService;
 import com.noriental.security.service.GroupLinkUserService;
@@ -38,9 +37,10 @@ import com.noriental.security.service.PermissionService;
 import com.noriental.utils.Base64EncodeAndDecodeUtils;
 import com.noriental.utils.CookieUtils;
 import com.noriental.utils.Encrypt;
+import com.noriental.utils.LoginUserInfo;
+import com.noriental.utils.LoginUserInfoUtils;
 import com.noriental.utils.PermissionUtils;
 import com.noriental.utils.StrMD5;
-import com.noriental.utils.UserUtils;
 import com.octo.captcha.service.CaptchaServiceException;
 import com.octo.captcha.service.image.ImageCaptchaService;
 
@@ -65,8 +65,8 @@ public class LoginController {
 	private GroupLinkUserService groupLinkUserService;
 	@Autowired
 	private ImageCaptchaService captchaService;
-	@Autowired
-	private UserUtils userUtils;
+	   @Autowired
+	    private LoginUserInfoUtils loginUserInfoUtils;
 	@Autowired
     private PermissionUtils permissionUtils;
 	
@@ -174,7 +174,7 @@ public class LoginController {
 	            return data;
 			}
 			// 存储用户登录信息到redis中
-			User user = new User();
+			LoginUserInfo user = new LoginUserInfo();
 			user.setId(admin.getId());
 			user.setGroupIds(groupIds);
 			user.setLoginUser(admin.getLoginUser());
@@ -183,7 +183,7 @@ public class LoginController {
 					+ System.currentTimeMillis() + "$" + admin.getId())
 					.getResult();
 			key = Base64EncodeAndDecodeUtils.encoderBASE64(key);
-			userUtils.setUser(LoginType.admin, key, user);
+			loginUserInfoUtils.setUser(LoginType.admin, key, user);
 			CookieUtils.setStrCookie(key, CookieUtils.USER_ID, response);
 			logger.info("用户登录信息--运营平台：" + admin.getLoginUser() + "(id=" + admin.getId()+ ")登录成功！！！");
 			data.put("success", true);
@@ -222,11 +222,11 @@ public class LoginController {
 	@RequestMapping("/logout")
 	public String logOut(ModelMap model, HttpServletRequest request,
 			HttpServletResponse response, HttpSession session) {
-		User currentUser = userUtils.getUser(LoginType.admin, request);
+		LoginUserInfo currentUser = loginUserInfoUtils.getUser(LoginType.admin, request);
 		if (currentUser != null) {
 		    Admin admin = adminService.findById(currentUser.getId());
 			CookieUtils.removeStrCookie(CookieUtils.USER_ID, response);
-			userUtils.delUser(LoginType.admin, request);
+			loginUserInfoUtils.delUser(LoginType.admin, request);
 			logger.info("用户登录信息--运营平台：" + admin.getLoginUser() + "(id=" + admin.getId()+ ")退出成功！！！");
 		}
 		request.setAttribute("islogin", true);

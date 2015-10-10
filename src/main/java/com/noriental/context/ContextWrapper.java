@@ -1,13 +1,10 @@
 package com.noriental.context;
 
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 import org.springframework.web.context.WebApplicationContext;
 
-import com.noriental.security.domain.Group;
-import com.noriental.security.domain.Permission;
 import com.noriental.security.service.GroupService;
 import com.noriental.security.service.PermissionService;
 import com.noriental.utils.PermissionUtils;

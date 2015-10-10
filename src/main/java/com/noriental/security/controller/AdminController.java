@@ -32,14 +32,14 @@ import com.noriental.security.domain.AdminVo;
 import com.noriental.security.domain.Group;
 import com.noriental.security.domain.TStage;
 import com.noriental.security.domain.TSubject;
-import com.noriental.security.domain.User;
 import com.noriental.security.domain.UserLinkSubject;
 import com.noriental.security.service.AdminService;
 import com.noriental.security.service.GroupService;
 import com.noriental.security.service.TSubjectService;
 import com.noriental.security.service.UserLinkSubjectService;
 import com.noriental.utils.Encrypt;
-import com.noriental.utils.UserUtils;
+import com.noriental.utils.LoginUserInfo;
+import com.noriental.utils.LoginUserInfoUtils;
 import com.sumory.mybatis.pagination.result.PageResult;
 
 @Controller
@@ -58,7 +58,7 @@ public class AdminController {
     private TSubjectService tSubjectService;
 
 	@Autowired
-	private UserUtils userUtils;
+	private LoginUserInfoUtils loginUserInfoUtils;
     
     /**
      * 
@@ -68,7 +68,7 @@ public class AdminController {
     @RequestMapping("/openAddPerson")
     public String openAddPerson(ModelMap model, 
     		HttpServletRequest request) {
-    	User currentUser = userUtils.getUser(LoginType.admin, request);
+    	LoginUserInfo currentUser = loginUserInfoUtils.getUser(LoginType.admin, request);
     	Group group = groupService.findByUserIdAndUserType(currentUser.getId(), Admin.USER_TYPE).get(0);
     	Map<String, Object> params = new HashMap<String, Object>();
         params.put("stats", 0);
@@ -143,7 +143,7 @@ public class AdminController {
             HttpServletRequest request, 
             HttpServletResponse response) {
     	
-    	User currentUser = userUtils.getUser(LoginType.admin, request);
+    	LoginUserInfo currentUser = loginUserInfoUtils.getUser(LoginType.admin, request);
     	Group currentGroup = groupService.findByUserIdAndUserType(currentUser.getId(), Admin.USER_TYPE).get(0);
         
     	//获取待修改用户信息
@@ -366,7 +366,7 @@ public class AdminController {
 	@RequestMapping("/doUpdatePwd")
    public @ResponseBody int doUpdatePwd(ModelMap model, 
    		@RequestParam("loginPass") String loginPass, HttpServletRequest request) {
-	    User currentUser = userUtils.getUser(LoginType.admin, request);
+	    LoginUserInfo currentUser = loginUserInfoUtils.getUser(LoginType.admin, request);
 		Admin admin = adminService.findById(currentUser.getId());
 		Encrypt encrypt = new Encrypt();
 		loginPass = encrypt.encrypt(loginPass, "MD5");
@@ -389,7 +389,7 @@ public class AdminController {
 	@RequestMapping(value="/checkPasswd", method = RequestMethod.GET)
 	public @ResponseBody
 	int checkPasswd(@RequestParam(value = "loginPass") String loginPass, HttpServletRequest request) {
-		User currentUser = userUtils.getUser(LoginType.admin, request);
+		LoginUserInfo currentUser = loginUserInfoUtils.getUser(LoginType.admin, request);
 		Encrypt encrypt = new Encrypt();
 		loginPass = encrypt.encrypt(loginPass, "MD5");
 		try {
@@ -505,7 +505,7 @@ public class AdminController {
     		@RequestParam(value = "name", required = false) String name,
     		@RequestParam(value = "stats", required = false) int stats,
     		HttpServletRequest request) {
-    	User currentUser = userUtils.getUser(LoginType.admin, request);
+    	LoginUserInfo currentUser = loginUserInfoUtils.getUser(LoginType.admin, request);
     	Group group = groupService.findByUserIdAndUserType(currentUser.getId(), Admin.USER_TYPE).get(0);
     	
     	Map<String, Object> params = new HashMap<String, Object>();
@@ -599,7 +599,7 @@ public class AdminController {
     	Object getFunc(ModelMap model, 
     			HttpServletRequest request) {
     	
-    	User currentUser = userUtils.getUser(LoginType.admin, request);
+    	LoginUserInfo currentUser = loginUserInfoUtils.getUser(LoginType.admin, request);
     	Group group = groupService.findByUserIdAndUserType(currentUser.getId(), Admin.USER_TYPE).get(0);
     	
     	List<Group> groupList = groupService.find(null);

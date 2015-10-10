@@ -55,6 +55,7 @@
             <mvc:exclude-mapping path="/ueditor/**"/>
             <mvc:exclude-mapping path="/platform/data/**"/>
             <mvc:exclude-mapping path="/druid/**"/>
+            <mvc:exclude-mapping path="/websocket/**"/>
             <bean class="com.noriental.security.interceptor.AuthorizeInterceptor">
                 <property name="whiteList">
                     <list>                       

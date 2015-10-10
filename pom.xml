@@ -5,7 +5,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<artifactId>wind_web</artifactId>
-	<groupId>latte2</groupId>
+	<groupId>latte3</groupId>
 	<packaging>war</packaging>
 	<version>2.0.0-SNAPSHOT</version>
 
@@ -51,28 +51,19 @@
 
 
 	<dependencies>
+		<dependency>
+			<groupId>wind</groupId>
+			<artifactId>wind_service</artifactId>
+			<version>1.0.0-SNAPSHOT</version>
+			<classifier>entity-shared-jar</classifier>
+		</dependency>
+		<dependency>
+			<groupId>wind</groupId>
+			<artifactId>wind_service</artifactId>
+			<version>1.0.0-SNAPSHOT</version>
+			<classifier>service-shared-jar</classifier>
+		</dependency>
 
-		<!-- <dependency>
-			<groupId>latte2</groupId>
-			<artifactId>latte_framework-shared-jar</artifactId>
-			<version>2.0.0-SNAPSHOT</version>
-		</dependency>
-		<dependency>
-			<groupId>latte2</groupId>
-			<artifactId>service_security-entity-shared-jar</artifactId>
-			<version>2.0.0-SNAPSHOT</version>
-		</dependency>
-		<dependency>
-			<groupId>latte2</groupId>
-			<artifactId>service_security-service-shared-jar</artifactId>
-			<version>2.0.0-SNAPSHOT</version>
-		</dependency> -->
-
-		<dependency>
-			<groupId>latte</groupId>
-			<artifactId>latte-fileupload</artifactId>
-			<version>0.1-SNAPSHOT</version>
-		</dependency>
 		<dependency>
 			<groupId>latte2</groupId>
 			<artifactId>mybatis_paginator-shared-jar</artifactId>
@@ -445,10 +436,10 @@
 			<version>[6.1.7, 6.999]</version>
 		</dependency>
 		<dependency>
-	        <groupId>com.alibaba</groupId>
-	        <artifactId>druid</artifactId>
-	        <version>1.0.13</version>
-	    </dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>druid</artifactId>
+			<version>1.0.13</version>
+		</dependency>
 	</dependencies>
 
 	<build>

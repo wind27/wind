@@ -317,12 +317,12 @@ $(document).ready(function(){
 	    $(".BtnBlue30 a em").toggleClass("shrink");
 	});	
 	
-	var islogin = $("#islogin").val();
-	if(islogin) {
-		latte.header.getNotice();
-		latte.header.checkNoReadNotice();
-		setInterval(function() {
-			latte.header.checkNoReadNotice();
-		}, 60000);
-	}
+//	var islogin = $("#islogin").val();
+//	if(islogin) {
+//		latte.header.getNotice();
+//		latte.header.checkNoReadNotice();
+//		setInterval(function() {
+//			latte.header.checkNoReadNotice();
+//		}, 60000);
+//	}
 });

@@ -1,4 +1,4 @@
-package com.noriental.security.domain;
+package com.noriental.utils;
 
 import java.io.Serializable;
 import java.util.Set;
@@ -10,8 +10,8 @@ import com.noriental.common.Constants.LoginType;
  * 
  * 
  * */
-public class User implements Serializable{
-	public User() {
+public class LoginUserInfo implements Serializable{
+	public LoginUserInfo() {
 	}
 
 	/**
@@ -35,6 +35,11 @@ public class User implements Serializable{
 	private int orgType;
 	private boolean hasSubject;
 	private String purchaseModule;
+	private long loginTime;
+	private long stageId;
+	private long gradeId;
+	private String stageName;
+	private String gradeName;
 
 	
 	public long getId() {
@@ -155,5 +160,45 @@ public class User implements Serializable{
 
     public void setPurchaseModule(String purchaseModule) {
         this.purchaseModule = purchaseModule;
+    }
+
+    public long getLoginTime() {
+        return loginTime;
+    }
+
+    public void setLoginTime(long loginTime) {
+        this.loginTime = loginTime;
+    }
+
+    public long getStageId() {
+        return stageId;
+    }
+
+    public void setStageId(long stageId) {
+        this.stageId = stageId;
+    }
+
+    public long getGradeId() {
+        return gradeId;
+    }
+
+    public void setGradeId(long gradeId) {
+        this.gradeId = gradeId;
+    }
+
+    public String getStageName() {
+        return stageName;
+    }
+
+    public void setStageName(String stageName) {
+        this.stageName = stageName;
+    }
+
+    public String getGradeName() {
+        return gradeName;
+    }
+
+    public void setGradeName(String gradeName) {
+        this.gradeName = gradeName;
     }
 }

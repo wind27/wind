@@ -93,7 +93,8 @@ public class AuthorizeTag extends TagSupport {
 	
 	@Override
 	public int doStartTag() throws JspException {
-		if(hasAuthorize()==true) {
+	    boolean flag = hasAuthorize();
+		if(flag==true) {
 			return EVAL_BODY_INCLUDE;
 		} else {
 			return SKIP_BODY;

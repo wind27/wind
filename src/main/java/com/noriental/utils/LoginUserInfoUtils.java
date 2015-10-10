@@ -1,13 +1,12 @@
 package com.noriental.utils;
 
-import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 
 import org.apache.commons.lang3.StringUtils;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.noriental.common.Constants.LoginType;
-import com.noriental.security.domain.User;
 import com.noriental.utils.PermissionUtils.AuthTimeout;
 
 /**
@@ -17,9 +16,9 @@ import com.noriental.utils.PermissionUtils.AuthTimeout;
  * 
  * */
 @Service
-public class UserUtils {
+public class LoginUserInfoUtils {
 	private static final String userPrefix = "LoginUser:";
-	@Resource
+	@Autowired
 	private RedisUtil redisUtil;
 	
 	/**
@@ -33,11 +32,11 @@ public class UserUtils {
 	 * @return : 返回获取的结果
 	 * 
 	 * */
-	public User getUser(LoginType portal, HttpServletRequest request) {
+	public LoginUserInfo getUser(LoginType portal, HttpServletRequest request) {
 		String cookieName = CookieUtils.getStrCookie(CookieUtils.USER_ID, request);
 		cookieName = (userPrefix + portal+":"+cookieName);
 		if(!StringUtils.isBlank(cookieName)) {
-			return  (User) redisUtil.getLoginUser(cookieName);
+			return  (LoginUserInfo) redisUtil.getLoginUser(cookieName);
 		} 
 		return null;
 	}
@@ -54,10 +53,10 @@ public class UserUtils {
      * @return : 返回设置结果
 	 * 
 	 * */
-	public boolean setUser(LoginType portal, String key, User user) {
+	public boolean setUser(LoginType portal, String key, LoginUserInfo loginUserInfo) {
 		key = (userPrefix + portal+":"+key);
 		if(!StringUtils.isBlank(key)) {
-			return redisUtil.setLoginUser(key, user, AuthTimeout.LOGIN_TIMEOUT) == 1 ? true : false;
+			return redisUtil.setLoginUser(key, loginUserInfo, AuthTimeout.LOGIN_TIMEOUT) == 1 ? true : false;
 		}
 		return false;
 	}
@@ -73,10 +72,10 @@ public class UserUtils {
 	 * @return : 返回设置结果
 	 * 
 	 * */
-	public boolean setUser(LoginType portal, String key, User user, int during) {
+	public boolean setUser(LoginType portal, String key, LoginUserInfo loginUserInfo, int during) {
 	    key = (userPrefix + portal+":"+key);
 	    if(!StringUtils.isBlank(key)) {
-	        return redisUtil.setLoginUser(key, user, during) == 1 ? true : false;
+	        return redisUtil.setLoginUser(key, loginUserInfo, during) == 1 ? true : false;
 	    }
 	    return false;
 	}
@@ -121,4 +120,20 @@ public class UserUtils {
 		}
 		return false;
 	}
+	
+	/**
+	 * 获取用户信息
+	 * 
+	 * @author qianchun  @date 2015年5月28日 下午4:44:40
+	 * @param portal
+	 * @param token
+	 * @return
+	 */
+    public LoginUserInfo getUser(LoginType portal, String token) {
+        String key = (userPrefix + portal+":"+token);
+        if(!StringUtils.isBlank(key)) {
+            return  (LoginUserInfo) redisUtil.getLoginUser(key);
+        } 
+        return null;
+    }
 }

@@ -13,11 +13,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 import com.noriental.common.Constants.LoginType;
 import com.noriental.security.domain.TSubject;
-import com.noriental.security.domain.User;
 
 public class DataAuthorizeTag extends TagSupport {
 	@Autowired
-	private UserUtils userUtils;
+	private LoginUserInfoUtils loginUserInfoUtils;
 	
 	private Integer gradeId = 0;
 	private Integer subjectId = 0;
@@ -51,7 +50,7 @@ public class DataAuthorizeTag extends TagSupport {
 	}
 	//判断用户是否登录
 	public boolean isLogin() {
-		User currentUser = userUtils.getUser(LoginType.school, request);
+		LoginUserInfo currentUser = loginUserInfoUtils.getUser(LoginType.school, request);
 
 		if(currentUser == null || currentUser.getId() > 0) {
 			return false;

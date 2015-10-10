@@ -28,7 +28,6 @@
 <script type="text/javascript" src="../../../resources/js/lib/juicer.js"></script>
 <script type="text/javascript" src="../../../resources/js/lib/jsrender.min.js"></script>
 <script type="text/javascript" src="../../../resources/js/lib/artDialog.js"></script>
-<script type="text/javascript" src="../../../resources/js/preview/video.js"></script>
 <script type="text/javascript" src="../../../resources/js/MD5.js"></script>
 <script type="text/javascript" src="../../../resources/js/cookieUtils.js"></script>
 <script type="text/javascript" src="../../../resources/js/common/global.js"></script>

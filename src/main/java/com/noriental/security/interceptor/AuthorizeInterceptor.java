@@ -23,12 +23,12 @@ import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
 import com.noriental.common.Constants.LoginType;
 import com.noriental.security.domain.Function;
 import com.noriental.security.domain.Permission;
-import com.noriental.security.domain.User;
 import com.noriental.security.service.FunctionService;
 import com.noriental.security.service.PermissionService;
+import com.noriental.utils.LoginUserInfo;
+import com.noriental.utils.LoginUserInfoUtils;
 import com.noriental.utils.PermissionUtils;
 import com.noriental.utils.StringUtil;
-import com.noriental.utils.UserUtils;
 
 /**
  * 拦截器
@@ -43,7 +43,7 @@ public class AuthorizeInterceptor extends HandlerInterceptorAdapter {
     @Autowired
     private FunctionService functionService;
 	@Autowired
-	private UserUtils userUtils;
+	private LoginUserInfoUtils loginUserInfoUtils;
 	@Autowired
     private PermissionUtils permissionUtils;
 
@@ -60,7 +60,7 @@ public class AuthorizeInterceptor extends HandlerInterceptorAdapter {
 		uri = formatURI(uri, request.getContextPath());
 		
 		//判断是否允许访问
-		User currentUser = userUtils.getUser(LoginType.admin, request);
+		LoginUserInfo currentUser = loginUserInfoUtils.getUser(LoginType.admin, request);
 		List<Permission> permissionList = null;
 		
 		//判断是否属于白名单

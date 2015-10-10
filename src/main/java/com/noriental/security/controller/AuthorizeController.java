@@ -28,6 +28,7 @@ import com.noriental.security.domain.Permission;
 import com.noriental.security.service.FunctionService;
 import com.noriental.security.service.GroupService;
 import com.noriental.security.service.PermissionService;
+import com.noriental.utils.LoginUserInfoUtils;
 import com.noriental.utils.PermissionUtils;
 
 @Controller
@@ -44,6 +45,9 @@ public class AuthorizeController {
 
     @Autowired
     private GroupService groupService;
+    
+    @Autowired
+    private LoginUserInfoUtils loginUserInfoUtils;
     
     
     private static final Logger logger = LoggerFactory.getLogger(AuthorizeController.class);
